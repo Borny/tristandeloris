@@ -1,0 +1,139 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: $zindex--header;
+  display: flex;
+  padding: 1rem;
+}
+
+// TITLE
+.header--title__container {
+  flex: 1;
+}
+
+.header--title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: 1.3rem;
+  background-color: transparent;
+  cursor: pointer;
+  &--firstname,
+  &--lastname {
+    width: 14px;
+    overflow: hidden;
+    display: inline-block;
+    transition: 0.4s ease-in;
+  }
+  &--firstname {
+    width: 12px;
+  }
+
+  &--lastname {
+    width: 15px;
+    font-weight: bold;
+  }
+
+  &:hover {
+    .header--title--firstname {
+      width: 70px;
+    }
+    .header--title--lastname {
+      width: 80px;
+    }
+
+    + .header--title--subtitle {
+      height: 20px;
+    }
+  }
+}
+
+// SUBTITLE
+.header--title--subtitle {
+  // display: inline-block;
+  color: $white;
+  height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in;
+}
+
+// SOCIAL
+.header--social__container {
+  position: fixed;
+  z-index: -1;
+
+  width: 400px;
+  height: 400px;
+  background: white;
+  border-radius: 50%;
+  top: -200px;
+  left: -200px;
+  opacity: 0.4;
+  transform: scale(0);
+
+  transition: 0.4s ease-in;
+
+  &.active {
+    // box-shadow: 0 0 100000px 1000px red;
+    animation: socialBlockAnimation 0.6s ease-in;
+    transform: scale(1);
+  }
+  // &.inActive {
+  //   // box-shadow: 0 0 100000px 1000px red;
+  //   animation: socialBlockAnimationHide 0.6s ease-in;
+  //   transform: scale(0);
+  // }
+}
+
+.header--social--list {
+  position: absolute;
+  bottom: 50px;
+  right: 160px;
+}
+
+.header--social--item {
+  width: 24px;
+  svg {
+    // fill: $white;
+  }
+}
+
+// MAIN NAV
+.main-navigation {
+  color: $white;
+  text-align: right;
+}
+
+@keyframes socialBlockAnimation {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  85% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// @keyframes socialBlockAnimationHide {
+//   0% {
+//     transform: scale(1);
+//   }
+//   15% {
+//     transform: scale(0.95);
+//   }
+//   30% {
+//     transform: scale(1.15);
+//   }
+//   100% {
+//     transform: scale(0);
+//   }
+// }

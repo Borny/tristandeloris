@@ -1,0 +1,8 @@
+.work {
+  background-color: $black;
+  height: 100vh;
+}
+
+.section-title {
+  @extend %section-title;
+}
