@@ -1,15 +1,19 @@
 // Tools
-@import './tools/variables.scss';
-@import './tools/mixins.scss';
-@import './tools/placeholders.scss';
+@import "./tools/variables.scss";
+@import "./tools/mixins.scss";
+@import "./tools/placeholders.scss";
 
 // Base
-@import './base/normalize.scss';
-@import './base/base.scss';
+@import "./base/normalize.scss";
+@import "./base/base.scss";
 
 // Components
-@import './components/header.scss';
-@import './components/footer.scss';
-@import './components/home.scss';
-@import './components/hero.scss';
-@import './components/work.scss';
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/home.scss";
+@import "./components/work.scss";
+@import "./components/hero.scss";
+@import "./components/work.scss";
+@import "./components/about.scss";
+@import "./components/contact.scss";
+@import "./components/loader.scss";

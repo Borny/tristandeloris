@@ -1,0 +1,138 @@
+.contact {
+  background-color: $black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .section-title {
+    @extend %section-title;
+  }
+
+  .section-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .form-wrapper {
+    position: relative;
+  }
+
+  .form {
+    width: 320px;
+    padding: 1rem;
+
+    &.loading {
+      opacity: 0.5;
+    }
+
+    .btn {
+      display: block;
+      outline: 0;
+      background: transparent;
+      margin: 2rem auto 0;
+      border-radius: 65px;
+      padding: 15px 40px;
+      border: 1px solid white;
+      color: #fff;
+      font-family: $fontPoppins;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+
+      &:disabled {
+        cursor: auto;
+        opacity: 0.3;
+
+        &:hover {
+          color: $white;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .form-control {
+    position: relative;
+    margin: 1.2rem 0;
+    width: 300px;
+
+    .input {
+      background: transparent;
+      border: 0;
+      border-bottom: 2px #fff solid;
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      font-size: 18px;
+      color: #fff;
+      outline: none;
+
+      &:focus,
+      &:valid {
+        outline: none;
+        border-bottom-color: $primary-color;
+      }
+
+      &.filled + label span,
+      &:focus + label span,
+      &:valid + label span {
+        color: $primary-color;
+        transform: translateY(-30px);
+      }
+    }
+
+    .textarea {
+      @extend .input;
+      height: 200px;
+    }
+
+    label {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      color: $white;
+    }
+
+    label span {
+      display: inline-block;
+      font-size: 18px;
+      min-width: 5px;
+      transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  }
+
+  .error {
+    color: $danger;
+    padding: 0.5rem 0 0;
+    font-size: $font-size-sm;
+  }
+
+  // MESSAGES
+  .message {
+    margin: 0 auto;
+    text-align: center;
+
+    &.success {
+      border-bottom: 2px solid $primary-color;
+    }
+    &.error {
+      font-weight: $fontWeightBold;
+      color: $primary-color;
+    }
+  }
+}

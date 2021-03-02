@@ -1,9 +1,14 @@
-import './styles/main.scss';
+// import "regenerator-runtime/runtime";
+import "./styles/main.scss";
 
-const headerTitleBtn = document.getElementById('header-title');
-const headerSocial = document.getElementById('header-social');
+import { Header } from "./js/header";
+import { Contact } from "./js/contact";
 
-headerTitleBtn.addEventListener('click', () => {
-  headerSocial.classList.toggle('active');
-  headerSocial.classList.toggle('inActive');
-})
+// HEADER
+const header = new Header();
+header.initHeader();
+
+// CONTACT
+
+const contact = new Contact();
+contact.initForm();

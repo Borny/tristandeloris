@@ -22,6 +22,7 @@
     background-color: $black;
     opacity: 0.2;
   }
+
   &:after {
     content: '';
     top: 0;
@@ -38,35 +39,46 @@
 .welcome-text {
   position: relative;
   z-index: 3;
+
+  &--content {
+    color: $white;
+    font-size: 3rem;
+    font-weight: $fontWeightBold;
+  }
 }
 
 // SCROLL
 .scroll-svg__container {
-  height: 57px;
   width: 27px;
+  height: 57px;
   display: flex;
   justify-content: center;
   position: relative;
   z-index: 3;
+  margin: 9rem 0 0;
+
   .scroll-btn {
-    // animation: scrollSvgAnimation 1s infinite alternate-reverse;
+    animation: scrollSvgAnimation 1s infinite alternate-reverse;
+    
+    @keyframes scrollSvgAnimation {
+      from {
+        transform: translate(923px, 890px);
+        z-index: 5;
+      }
+    
+      to {
+        transform: translate(923px, 916px);
+      }
+    }
   }
 }
 
-@keyframes scrollSvgAnimation {
-  from {
-    transform: translate(923px, 890px);
-    z-index: 5;
-  }
-  to {
-    transform: translate(923px, 916px);
-  }
-}
 
 // SCROLL ICON
 .scroll__container {
   display: flex;
   justify-content: center;
+
   svg {
     width: 20px;
     height: 40px;
@@ -77,12 +89,13 @@
   }
 }
 
-@keyframes scrollSvgAnimation {
-  from {
-    transform: translate(176px, 303px);
-    z-index: 5;
-  }
-  to {
-    transform: translate(176px, 314px);
-  }
-}
+// @keyframes scrollSvgAnimation {
+//   from {
+//     transform: translate(176px, 303px);
+//     z-index: 5;
+//   }
+
+//   to {
+//     transform: translate(176px, 314px);
+//   }
+// }
