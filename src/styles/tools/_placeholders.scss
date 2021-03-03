@@ -5,8 +5,9 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: $fontWeightThin;
+  padding: 2rem 0;
 
   span {
-    font-weight: $fontWeightBold;
+    font-weight: $fontWeightMedium;
   }
 }

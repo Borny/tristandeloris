@@ -12,6 +12,8 @@
       color: $white;
       margin: 0 auto;
       text-align: center;
+      font-size: 1.5rem;
+      padding: 0rem 0 3rem;
     }
   }
 
@@ -69,60 +71,59 @@
       border: 1px solid $white;
       border-radius: 50px;
       background: rgba($color: $white, $alpha: 0.3);
-      height: 50px;
-      width: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
-      z-index: 5;
       opacity: 0;
-      padding: 0;
-      transition: 0.4s ease-in;
-      transition-delay: 0s;
-      //   width: 0;
-
-      &:hover {
-        background: rgba($color: $white, $alpha: 0.7);
-      }
+      transition: 0.4s ease-in 0s;
 
       // Added through JS
       &.show {
-        // width: 50px;
         opacity: 1;
-        transition: opacity 0.4s ease-in 1s, padding 0.4s ease-in 0s,
-          width 0.4s ease-in 0s;
-        // transition-delay: 1s;
+        transition: opacity 0.4s ease-in 1s;
+        // .content,
+        .btn-arrow {
+          cursor: pointer;
+        }
       }
 
       // Added through JS
       &.expand {
-        // transition: 0.4s ease-in;
-        transition-delay: 0s;
-        padding: 0 2rem;
-        width: auto;
-        &:hover {
-          background: rgba($color: $white, $alpha: 0.3);
-        }
-
         .content {
           opacity: 1;
-          height: auto;
-          display: block;
+          padding: 0 1.2rem;
+          font-size: inherit;
+        }
+      }
+
+      .btn-arrow {
+        border-radius: 50px;
+        background: rgba($color: $white, $alpha: 0.3);
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        border: 1px solid $white;
+        transition: 0.4s ease-in;
+
+        &:hover {
+          background: rgba($color: $white, $alpha: 0.7);
         }
       }
 
       .content {
-        display: none;
         color: $white;
         opacity: 0;
-        height: 0;
-        transition: 0.2s ease-in;
-        transition-delay: 0.4s;
+        padding: 0;
+        transition: 0.4s ease-in;
         text-align: center;
-        &:hover {
-          color: $primary-color;
-        }
+        font-size: 0;
+        cursor: default;
+        // &:hover {
+        //   color: $primary-color;
+        // }
       }
     }
 
@@ -130,6 +131,7 @@
       position: absolute;
       .path {
         opacity: 0;
+        transition: 0.4s ease-in;
         &.show {
           opacity: 1;
         }

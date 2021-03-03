@@ -66,7 +66,6 @@ export class About {
           path.classList.add("show");
         } else {
           capsule.classList.remove("show");
-          capsule.classList.remove("expand");
           path.classList.remove("show");
         }
       });
@@ -75,8 +74,15 @@ export class About {
 
   toggleExpandCapsules() {
     this.capsules.forEach((capsule) => {
-      capsule.addEventListener("click", () => {
+      const btn = capsule.querySelector(".btn-arrow");
+      const arrows = capsule.querySelectorAll(".fas");
+      btn.addEventListener("click", () => {
         capsule.classList.toggle("expand");
+        arrows.forEach((arrow) => {
+          arrow.classList.contains("hidden")
+            ? arrow.classList.remove("hidden")
+            : arrow.classList.add("hidden");
+        });
       });
     });
   }
