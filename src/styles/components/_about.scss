@@ -1,6 +1,6 @@
 .about {
   background-color: $black;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   .section-title {
@@ -18,15 +18,20 @@
   }
 
   .section-main {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+    min-height: 100vh;
     background-image: url("/img/pics/crater-center.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
+    background-size: 280%;
+    background-position: center;
+
+    @media (min-width: $screen-md) {
+      background-size: cover;
+    }
 
     &:before {
       content: "";
@@ -52,13 +57,18 @@
   }
 
   .target {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: transparent;
     border: 5px solid $white;
     position: relative;
     z-index: $zindex--target;
+
+    @media (min-width: $screen-md) {
+      width: 300px;
+      height: 300px;
+    }
   }
 
   .skill {
@@ -93,6 +103,12 @@
           opacity: 1;
           padding: 0 1.2rem;
           font-size: inherit;
+        }
+
+        .btn-arrow {
+          .icon {
+            transform: rotate(180deg);
+          }
         }
       }
 
@@ -138,9 +154,22 @@
       }
       &.svg-line-one {
         .show {
-          animation: pathOne 1s ease-in;
+          animation: pathOneMobile 1s ease-in;
 
-          @keyframes pathOne {
+          @media (min-width: $screen-md) {
+            animation: pathOneDesktop 1s ease-in;
+          }
+
+          @keyframes pathOneMobile {
+            0% {
+              stroke-dashoffset: 157.518px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+
+          @keyframes pathOneDesktop {
             0% {
               stroke-dashoffset: 179px;
             }
@@ -152,9 +181,22 @@
       }
       &.svg-line-two {
         .show {
-          animation: pathtwo 1s ease-in;
+          animation: pathTwoMobile 1s ease-in;
 
-          @keyframes pathtwo {
+          @media (min-width: $screen-md) {
+            animation: pathTwoDesktop 1s ease-in;
+          }
+
+          @keyframes pathTwoMobile {
+            0% {
+              stroke-dashoffset: 101.762px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+
+          @keyframes pathTwoDesktop {
             0% {
               stroke-dashoffset: 218px;
             }
@@ -166,9 +208,22 @@
       }
       &.svg-line-three {
         .show {
-          animation: paththree 1s ease-in;
+          animation: pathThreeMobile 1s ease-in;
 
-          @keyframes paththree {
+          @media (min-width: $screen-md) {
+            animation: pathThreeDesktop 1s ease-in;
+          }
+
+          @keyframes pathThreeMobile {
+            0% {
+              stroke-dashoffset: 96.4514px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+
+          @keyframes pathThreeDesktop {
             0% {
               stroke-dashoffset: 189px;
             }
@@ -180,9 +235,21 @@
       }
       &.svg-line-four {
         .show {
-          animation: pathfour 1s ease-in;
+          animation: pathFourMobile 1s ease-in;
 
-          @keyframes pathfour {
+          @media (min-width: $screen-md) {
+            animation: pathFourDesktop 1s ease-in;
+          }
+
+          @keyframes pathFourMobile {
+            0% {
+              stroke-dashoffset: 171.819px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+          @keyframes pathFourDesktop {
             0% {
               stroke-dashoffset: 152px;
             }
@@ -204,20 +271,42 @@
       box-shadow: 0 0 0 8px rgba($color: $white, $alpha: 0.5);
 
       &.dot-one {
-        top: 50px;
-        left: 18px;
+        right: 37px;
+        top: 4px;
+
+        @media (min-width: $screen-md) {
+          top: 50px;
+          left: 18px;
+        }
       }
       &.dot-two {
-        left: 63px;
-        top: 264px;
+        right: 4px;
+        top: 138px;
+
+        @media (min-width: $screen-md) {
+          left: 63px;
+          top: 264px;
+        }
       }
       &.dot-three {
-        right: 37px;
-        top: 29px;
+        top: 30px;
+        left: 8px;
+
+        @media (min-width: $screen-md) {
+          right: 37px;
+          top: 29px;
+          left: auto;
+        }
       }
       &.dot-four {
-        right: -2px;
-        top: 186px;
+        left: 33px;
+        top: 168px;
+
+        @media (min-width: $screen-md) {
+          left: auto;
+          right: -2px;
+          top: 186px;
+        }
       }
     }
   }

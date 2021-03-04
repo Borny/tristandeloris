@@ -108,11 +108,11 @@ textarea {
   }
 }
 
-.mobile-hidden {
-  display: none !important;
+.desktop-hidden {
+  display: block !important;
 
   @include screen-sm() {
-    display: block !important;
+    display: none !important;
   }
 }
 

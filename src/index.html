@@ -96,7 +96,7 @@
           <div class="welcome-text--content">
             <p>Web Developement</p>
             <p>Design</p>
-            <p>...and more!</p>
+            <small>...and a few more things!</small>
           </div>
           <div class="welcome-text--logo"></div>
         </div>
@@ -138,6 +138,93 @@
       <!-- WORK -->
       <section class="work">
         <div class="section-title">My <span>Work</span></div>
+        <div class="section-main">
+          <div class="portfolio">
+            <div class="project active">
+              <div class="img-container">
+                <img
+                  class="img"
+                  alt="belaetcome"
+                  src="./img/pics/belaetcome.png"
+                />
+              </div>
+              <div class="panel">
+                <h2>Compagnie Bela & Côme</h2>
+                <p class="detail">
+                  Site web de la
+                  <strong>Compagnie de danse Bela & Côme</strong> basée à
+                  Bordeaux, France.
+                </p>
+                <p class="detail">
+                  <strong>One Page design</strong> avec sections description,
+                  galerie photos, informations sur les projets en cours et
+                  formulaire de contact.
+                </p>
+                <a
+                  href="https://belaetcome.com"
+                  target="blank"
+                  class="btn btn-visit"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div class="project">
+              <div class="img-container">
+                <img class="img" alt="ics france" src="./img/pics/ics.png" />
+              </div>
+              <div class="panel">
+                <h2>
+                  International Capoeira<br />
+                  School
+                </h2>
+                <p class="detail">
+                  Web App de l'association
+                  <strong>International Capoeira School</strong> à Colombes.
+                </p>
+                <p class="detail">
+                  <strong>Angular Single Page Application</strong> avec pages
+                  informations de cours, formulaires d'inscription en ligne,
+                  formulaire de contact et backoffice pour la gestion des
+                  adhérents.
+                </p>
+                <a
+                  href="https://icsfrance.fr"
+                  target="blank"
+                  class="btn btn-visit"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div class="project">
+              <div class="img-container">
+                <img
+                  class="img"
+                  alt="ionic-timer"
+                  src="./img/pics/ionic-timer.png"
+                />
+              </div>
+              <div class="panel">
+                <h2>ionic Timer</h2>
+                <p class="detail">
+                  <strong>Progressive Web App Ionic Angular</strong>
+                </p>
+                <p class="detail">
+                  Fonctionnalités chronomètre, timer, Tabata et possibilité
+                  <strong
+                    >d'installation de l'application sur mobile ou
+                    ordinateur</strong
+                  >.
+                </p>
+                <a
+                  href="https://borny.github.io/ionic-timer/home/timer"
+                  target="blank"
+                  class="btn btn-visit"
+                  >Visit</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- ABOUT -->
@@ -153,13 +240,32 @@
               <div class="svg-container svg-container-one">
                 <div class="capsule capsule-one">
                   <button class="btn btn-arrow">
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-right hidden"></i>
+                    <i class="fas fa-chevron-left icon"></i>
                   </button>
                   <div class="content">Surfer</div>
                 </div>
+
+                <!-- LINES -->
                 <svg
-                  class="svg-line svg-line-one"
+                  class="svg-line svg-line-one svg-line--mobile desktop-hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="66.74"
+                  height="119.923"
+                  viewBox="0 0 66.74 119.923"
+                >
+                  <path
+                    class="path"
+                    d="M382,3017l64.54-34.056V2898.4"
+                    transform="translate(-381.3 -2898.403)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                  />
+                </svg>
+                <svg
+                  class="svg-line svg-line-one mobile-hidden svg-line--desktop"
                   xmlns="http://www.w3.org/2000/svg"
                   width="163.11"
                   height="59.11"
@@ -183,13 +289,30 @@
               <div class="svg-container svg-container-two">
                 <div class="capsule capsule-two">
                   <button class="btn btn-arrow">
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-right hidden"></i>
+                    <i class="fas fa-chevron-left icon"></i>
                   </button>
                   <div class="content">Capoeira</div>
                 </div>
                 <svg
-                  class="svg-line svg-line-two"
+                  class="svg-line svg-line-two svg-line--mobile svg-line-three desktop-hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38.22"
+                  height="90.393"
+                  viewBox="0 0 38.22 90.393"
+                >
+                  <path
+                    class="path"
+                    d="M432,3086l35.54,45.213v44.253"
+                    transform="translate(-430.821 -3085.073)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                  />
+                </svg>
+                <svg
+                  class="svg-line svg-line-two svg-line--desktop mobile-hidden"
                   xmlns="http://www.w3.org/2000/svg"
                   width="200.873"
                   height="59.053"
@@ -214,12 +337,30 @@
                 <div class="capsule capsule-three">
                   <div class="content">Traveler</div>
                   <button class="btn btn-arrow">
-                    <i class="fas fa-chevron-left hidden"></i>
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right icon"></i>
                   </button>
                 </div>
                 <svg
-                  class="svg-line svg-line-three"
+                  class="svg-line svg-line--mobile svg-line-three desktop-hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="52.263"
+                  height="70.694"
+                  viewBox="0 0 52.263 70.694"
+                >
+                  <path
+                    class="path"
+                    d="M787,3044l-49.942-32.662v-36.777"
+                    transform="translate(-735.558 -2974.561)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                  />
+                </svg>
+
+                <svg
+                  class="svg-line svg-line--desktop svg-line-three mobile-hidden"
                   xmlns="http://www.w3.org/2000/svg"
                   width="186.386"
                   height="27.95"
@@ -244,12 +385,32 @@
                 <div class="capsule capsule-four">
                   <div class="content">DIY</div>
                   <button class="btn btn-arrow">
-                    <i class="fas fa-chevron-left hidden"></i>
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right icon"></i>
                   </button>
                 </div>
+
+                <!-- SVG LINES -->
                 <svg
-                  class="svg-line svg-line-four"
+                  class="svg-line svg-line--mobile svg-line-four desktop-hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="59.944"
+                  height="147.71"
+                  viewBox="0 0 59.944 147.71"
+                >
+                  <path
+                    class="path"
+                    d="M815,3052l-57.428,52.8v93.807"
+                    transform="translate(-756.072 -3050.896)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                  />
+                </svg>
+
+                <svg
+                  class="svg-line svg-line--desktop svg-line-four mobile-hidden"
                   xmlns="http://www.w3.org/2000/svg"
                   width="139.485"
                   height="48.757"

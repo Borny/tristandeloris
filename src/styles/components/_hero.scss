@@ -3,13 +3,18 @@
   z-index: 0;
   background-image: url("/img/pics/kalalau.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center center;
+  background-position: bottom;
+  background-size: cover;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+
+  @media (min-width: $screen-sm) {
+    background-position: center center;
+    background-size: 100% 100%;
+  }
 
   &:before {
     content: "";
@@ -45,21 +50,39 @@
   width: 100%;
   z-index: 3;
   display: flex;
+  flex-flow: column;
   flex: 2;
   align-items: flex-end;
 
+  @media (min-width: $screen-sm) {
+    flex-flow: row;
+  }
+
   &--content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
     color: $white;
-    font-size: 3rem;
+    font-size: 2rem;
     flex: 1;
-    text-align: right;
+    padding: 1rem;
+
+    @media (min-width: $screen-sm) {
+      align-items: flex-end;
+      // justify-content: flex-end;
+      font-size: 3rem;
+      text-align: right;
+    }
     p {
       font-weight: $fontWeightSemi;
     }
   }
 
   &--logo {
-    flex: 1;
+    @media (min-width: $screen-sm) {
+      flex: 1;
+    }
   }
 }
 
