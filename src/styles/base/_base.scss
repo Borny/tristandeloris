@@ -124,6 +124,14 @@ textarea {
 // HACKS
 //////////
 
+// CANCELS RED BORDER ON FIREFOX INPUT ERROR
+textarea,
+input {
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
 //CANCELS SAFARI INPUT ICON
 input::-webkit-contacts-auto-fill-button {
   visibility: hidden;
