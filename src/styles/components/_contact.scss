@@ -1,6 +1,6 @@
 .contact {
   background-color: $black;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 
@@ -69,7 +69,8 @@
   .form-control {
     position: relative;
     margin: 1.2rem 0;
-    width: 300px;
+    width: 100%;
+    max-width: 100%;
 
     .input {
       background: transparent;
@@ -77,8 +78,7 @@
       border-bottom: 2px #fff solid;
       display: block;
       width: 100%;
-      padding: 15px 0;
-      font-size: 18px;
+      padding: 1rem 0 0.4rem;
       color: #fff;
       outline: none;
 

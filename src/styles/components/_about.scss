@@ -1,67 +1,313 @@
 .about {
-    background-color: $black;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    .section-title {
-    
-        @extend %section-title;
+  background-color: $black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .section-title {
+    @extend %section-title;
+  }
+
+  .section-content {
+    p {
+      color: $white;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 0rem 0 3rem;
     }
-    
-    .section-main {
+  }
+
+  .section-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 100vh;
+    background-image: url("/img/pics/crater-center.jpg");
+    background-repeat: no-repeat;
+    background-size: 280%;
+    background-position: center;
+
+    @media (min-width: $screen-md) {
+      background-size: cover;
+    }
+
+    &:before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 30%);
+      z-index: 2;
+    }
+
+    &:after {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 20%);
+      z-index: 2;
+    }
+  }
+
+  .target {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid $white;
+    position: relative;
+    z-index: $zindex--target;
+
+    @media (min-width: $screen-md) {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .skill {
+    .svg-container {
+      position: absolute;
+    }
+
+    .capsule {
+      position: absolute;
+      border: 1px solid $white;
+      border-radius: 50px;
+      background: rgba($color: $white, $alpha: 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.4s ease-in 0s;
+
+      // Added through JS
+      &.show {
+        opacity: 1;
+        transition: opacity 0.4s ease-in 1s;
+        // .content,
+        .btn-arrow {
+          cursor: pointer;
+        }
+      }
+
+      // Added through JS
+      &.expand {
+        .content {
+          opacity: 1;
+          padding: 0 1.2rem;
+          font-size: inherit;
+        }
+
+        .btn-arrow {
+          .icon {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .btn-arrow {
+        border-radius: 50px;
+        background: rgba($color: $white, $alpha: 0.3);
+        height: 50px;
+        width: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex:1;
-        background-image: url('/img/pics/crater-center.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        position: relative;
+        color: $white;
+        border: 1px solid $white;
+        transition: 0.4s ease-in;
 
-        &:before{
-            content: "";
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 30%);
-            z-index: 2;
+        &:hover {
+          background: rgba($color: $white, $alpha: 0.7);
         }
+      }
 
-        &:after{
-            content: "";
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 20%);
-            z-index: 2;
-        }
-
-        .target{
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background-color: transparent;
-            border: 5px solid $white;
-            position: relative;
-
-            .dot{
-                position: absolute;
-                left: -10px;
-                top: 50%;
-                // transform: translate(-50%, -50%);
-                transform: translateY(-50%);
-                display: block;
-                width: 16px;
-                height: 16px;
-                background-color: $white;
-                border-radius: 50%;
-                box-shadow: 0 0 0 8px rgba($color: $white, $alpha: 0.5);
-            }
-        }
+      .content {
+        color: $white;
+        opacity: 0;
+        padding: 0;
+        transition: 0.4s ease-in;
+        text-align: center;
+        font-size: 0;
+        cursor: default;
+        // &:hover {
+        //   color: $primary-color;
+        // }
+      }
     }
+
+    .svg-line {
+      position: absolute;
+      .path {
+        opacity: 0;
+        transition: 0.4s ease-in;
+        &.show {
+          opacity: 1;
+        }
+      }
+      &.svg-line-one {
+        .show {
+          animation: pathOneMobile 1s ease-in;
+
+          @media (min-width: $screen-md) {
+            animation: pathOneDesktop 1s ease-in;
+          }
+
+          @keyframes pathOneMobile {
+            0% {
+              stroke-dashoffset: 157.518px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+
+          @keyframes pathOneDesktop {
+            0% {
+              stroke-dashoffset: 179px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+        }
+      }
+      &.svg-line-two {
+        .show {
+          animation: pathTwoMobile 1s ease-in;
+
+          @media (min-width: $screen-md) {
+            animation: pathTwoDesktop 1s ease-in;
+          }
+
+          @keyframes pathTwoMobile {
+            0% {
+              stroke-dashoffset: 101.762px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+
+          @keyframes pathTwoDesktop {
+            0% {
+              stroke-dashoffset: 218px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+        }
+      }
+      &.svg-line-three {
+        .show {
+          animation: pathThreeMobile 1s ease-in;
+
+          @media (min-width: $screen-md) {
+            animation: pathThreeDesktop 1s ease-in;
+          }
+
+          @keyframes pathThreeMobile {
+            0% {
+              stroke-dashoffset: 96.4514px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+
+          @keyframes pathThreeDesktop {
+            0% {
+              stroke-dashoffset: 189px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+        }
+      }
+      &.svg-line-four {
+        .show {
+          animation: pathFourMobile 1s ease-in;
+
+          @media (min-width: $screen-md) {
+            animation: pathFourDesktop 1s ease-in;
+          }
+
+          @keyframes pathFourMobile {
+            0% {
+              stroke-dashoffset: 171.819px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+          @keyframes pathFourDesktop {
+            0% {
+              stroke-dashoffset: 152px;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .dot {
+      position: absolute;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: $white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 8px rgba($color: $white, $alpha: 0.5);
+
+      &.dot-one {
+        right: 37px;
+        top: 4px;
+
+        @media (min-width: $screen-md) {
+          top: 50px;
+          left: 18px;
+        }
+      }
+      &.dot-two {
+        right: 4px;
+        top: 138px;
+
+        @media (min-width: $screen-md) {
+          left: 63px;
+          top: 264px;
+        }
+      }
+      &.dot-three {
+        top: 30px;
+        left: 8px;
+
+        @media (min-width: $screen-md) {
+          right: 37px;
+          top: 29px;
+          left: auto;
+        }
+      }
+      &.dot-four {
+        left: 33px;
+        top: 168px;
+
+        @media (min-width: $screen-md) {
+          left: auto;
+          right: -2px;
+          top: 186px;
+        }
+      }
+    }
+  }
 }
