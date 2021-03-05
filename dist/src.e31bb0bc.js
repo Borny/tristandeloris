@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\kalalau.png":[["kalalau.a349272b.png","img/pics/kalalau.png"],"img/pics/kalalau.png"],"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\crater-center.jpg":[["crater-center.cb31532d.jpg","img/pics/crater-center.jpg"],"img/pics/crater-center.jpg"],"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"js/header.js":[function(require,module,exports) {
+},{"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\rail-road-down.jpg":[["rail-road-down.32478370.jpg","img/pics/rail-road-down.jpg"],"img/pics/rail-road-down.jpg"],"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\maunakea.jpg":[["maunakea.3693c564.jpg","img/pics/maunakea.jpg"],"img/pics/maunakea.jpg"],"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\crater-center.jpg":[["crater-center.cb31532d.jpg","img/pics/crater-center.jpg"],"img/pics/crater-center.jpg"],"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"js/header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -536,7 +536,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58582" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59538" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -841,9 +841,9 @@ select:-webkit-autofill:focus {
 .hero {
   position: relative;
   z-index: 0;
-  background-image: url("/kalalau.a349272b.png");
+  background-image: url("/rail-road-down.32478370.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: left;
   background-size: cover;
   display: flex;
   flex-flow: column;
@@ -853,8 +853,8 @@ select:-webkit-autofill:focus {
 }
 @media (min-width: 768px) {
   .hero {
+    background-image: url("/maunakea.3693c564.jpg");
     background-position: center center;
-    background-size: 100% 100%;
   }
 }
 .hero:before {
@@ -882,11 +882,11 @@ select:-webkit-autofill:focus {
 .welcome-text {
   position: relative;
   width: 100%;
-  z-index: 3;
   display: flex;
   flex-flow: column;
+  align-items: center;
   flex: 2;
-  align-items: flex-end;
+  z-index: 3;
 }
 @media (min-width: 768px) {
   .welcome-text {
@@ -905,9 +905,7 @@ select:-webkit-autofill:focus {
 }
 @media (min-width: 768px) {
   .welcome-text--content {
-    align-items: flex-end;
     font-size: 3rem;
-    text-align: right;
   }
 }
 .welcome-text--content p {
