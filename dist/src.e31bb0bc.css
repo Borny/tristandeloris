@@ -545,9 +545,11 @@ select:-webkit-autofill:focus {
   width: 15px;
   font-weight: bold;
 }
-.header--title:hover {
-  color: lightblue;
-  text-shadow: 0 0 4px lightblue;
+@media (min-width: 992px) {
+  .header--title:hover {
+    color: lightblue;
+    text-shadow: 0 0 4px lightblue;
+  }
 }
 .header--title.active .header--title--firstname {
   width: 70px;
@@ -623,11 +625,11 @@ select:-webkit-autofill:focus {
   margin: 0 0 0.5rem;
 }
 .header--social--item:hover svg {
-  fill: #808c9f;
+  fill: #2a6ad1;
 }
 .header--social--item svg {
   fill: #fff;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .main-navigation {
@@ -671,7 +673,7 @@ select:-webkit-autofill:focus {
   position: relative;
   display: flex;
   align-items: center;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-out;
   cursor: pointer;
 }
 @media (min-width: 992px) {
@@ -726,7 +728,7 @@ select:-webkit-autofill:focus {
   }
 }
 .project.active h2 {
-  animation: titleIn 1s ease-in;
+  animation: titleIn 1s ease-out;
 }
 @keyframes titleIn {
   from {
@@ -739,7 +741,7 @@ select:-webkit-autofill:focus {
   }
 }
 .project.active .detail {
-  animation: detailIn 1s ease-in;
+  animation: detailIn 1s ease-out;
 }
 @keyframes detailIn {
   from {
@@ -752,7 +754,7 @@ select:-webkit-autofill:focus {
   }
 }
 .project.active .btn-visit {
-  animation: btnVisitIn 1s ease-in;
+  animation: btnVisitIn 1s ease-out;
 }
 @keyframes btnVisitIn {
   from {
@@ -775,11 +777,11 @@ select:-webkit-autofill:focus {
   justify-content: center;
   padding: 0;
   z-index: 1;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-out;
 }
 .project .img-container .img {
   margin: 0;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-out;
   height: 100%;
   width: auto;
 }
@@ -804,16 +806,12 @@ select:-webkit-autofill:focus {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 0 0 2rem;
 }
 @media (min-width: 992px) {
   .project .panel h2 {
     font-size: 3rem;
     white-space: nowrap;
   }
-}
-.project .panel .detail {
-  margin: 0 0 2rem;
 }
 .project .btn-visit {
   display: inline-block;
@@ -825,7 +823,7 @@ select:-webkit-autofill:focus {
   background: transparent;
   font-weight: 500;
   font-size: 1.2rem;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-out;
   text-align: center;
 }
 @media (min-width: 992px) {
@@ -841,9 +839,8 @@ select:-webkit-autofill:focus {
 .hero {
   position: relative;
   z-index: 0;
-  background-image: url("/rail-road-down.32478370.jpg");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-flow: column;
@@ -967,7 +964,7 @@ select:-webkit-autofill:focus {
   position: relative;
   display: flex;
   align-items: center;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-out;
   cursor: pointer;
 }
 @media (min-width: 992px) {
@@ -1022,7 +1019,7 @@ select:-webkit-autofill:focus {
   }
 }
 .project.active h2 {
-  animation: titleIn 1s ease-in;
+  animation: titleIn 1s ease-out;
 }
 @keyframes titleIn {
   from {
@@ -1035,7 +1032,7 @@ select:-webkit-autofill:focus {
   }
 }
 .project.active .detail {
-  animation: detailIn 1s ease-in;
+  animation: detailIn 1s ease-out;
 }
 @keyframes detailIn {
   from {
@@ -1048,7 +1045,7 @@ select:-webkit-autofill:focus {
   }
 }
 .project.active .btn-visit {
-  animation: btnVisitIn 1s ease-in;
+  animation: btnVisitIn 1s ease-out;
 }
 @keyframes btnVisitIn {
   from {
@@ -1071,11 +1068,11 @@ select:-webkit-autofill:focus {
   justify-content: center;
   padding: 0;
   z-index: 1;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-out;
 }
 .project .img-container .img {
   margin: 0;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-out;
   height: 100%;
   width: auto;
 }
@@ -1100,16 +1097,12 @@ select:-webkit-autofill:focus {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 0 0 2rem;
 }
 @media (min-width: 992px) {
   .project .panel h2 {
     font-size: 3rem;
     white-space: nowrap;
   }
-}
-.project .panel .detail {
-  margin: 0 0 2rem;
 }
 .project .btn-visit {
   display: inline-block;
@@ -1121,7 +1114,7 @@ select:-webkit-autofill:focus {
   background: transparent;
   font-weight: 500;
   font-size: 1.2rem;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-out;
   text-align: center;
 }
 @media (min-width: 992px) {

@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\rail-road-down.jpg":[["rail-road-down.32478370.jpg","img/pics/rail-road-down.jpg"],"img/pics/rail-road-down.jpg"],"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\maunakea.jpg":[["maunakea.3693c564.jpg","img/pics/maunakea.jpg"],"img/pics/maunakea.jpg"],"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\crater-center.jpg":[["crater-center.cb31532d.jpg","img/pics/crater-center.jpg"],"img/pics/crater-center.jpg"],"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"js/header.js":[function(require,module,exports) {
+},{"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\maunakea.jpg":[["maunakea.3693c564.jpg","img/pics/maunakea.jpg"],"img/pics/maunakea.jpg"],"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\crater-center.jpg":[["crater-center.cb31532d.jpg","img/pics/crater-center.jpg"],"img/pics/crater-center.jpg"],"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"js/header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -223,7 +223,53 @@ class Header {
 }
 
 exports.Header = Header;
-},{}],"js/work.js":[function(require,module,exports) {
+},{}],"img/pics/rail-road-down-center.jpg":[function(require,module,exports) {
+module.exports = "/rail-road-down-center.01d9c3c2.jpg";
+},{}],"img/pics/hourtin-sunset.jpg":[function(require,module,exports) {
+module.exports = "/hourtin-sunset.7c4dd7fb.jpg";
+},{}],"js/hero.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Hero = void 0;
+
+var _railRoadDownCenter = _interopRequireDefault(require("../img/pics/rail-road-down-center.jpg"));
+
+var _hourtinSunset = _interopRequireDefault(require("../img/pics/hourtin-sunset.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+class Hero {
+  constructor() {
+    this.heroSection = document.querySelector(".hero");
+  }
+
+  initHero() {
+    // console.log(imageURL);
+    const railImg = "rail-road-down.jpg";
+    const sunsetImg = "/img/pics/hourtin-sunset.jpg";
+    let idx = 0;
+    const imgs = [_railRoadDownCenter.default, _hourtinSunset.default //   "https://images.unsplash.com/photo-1536744052983-bcf122437f48?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80",
+    //   "https://images.unsplash.com/photo-1531743672295-bbd901790069?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80",
+    ];
+    this.heroSection.style.backgroundImage = "url('".concat(imgs[idx], "')");
+    setInterval(() => {
+      console.log(idx);
+      this.heroSection.style.backgroundImage = "url('".concat(imgs[idx], "')");
+      idx++;
+
+      if (idx > imgs.length - 1) {
+        idx = 0;
+      }
+    }, 4000);
+  }
+
+}
+
+exports.Hero = Hero;
+},{"../img/pics/rail-road-down-center.jpg":"img/pics/rail-road-down-center.jpg","../img/pics/hourtin-sunset.jpg":"img/pics/hourtin-sunset.jpg"}],"js/work.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -237,6 +283,10 @@ class Work {
   }
 
   toggleProjectPanels() {
+    if (window.innerWidth >= 992) {
+      this.projects[0].classList.add("active");
+    }
+
     this.projects.forEach(project => {
       project.addEventListener("click", () => {
         this.projects.forEach(proj => {
@@ -271,7 +321,7 @@ class About {
   }
 
   animateSkills() {
-    const triggerBottom = window.innerHeight / 2;
+    const triggerBottom = window.innerHeight / 3 * 2;
     this.skills.forEach((skill, index) => {
       const svgContainer = skill.querySelector(".svg-container");
       let svg, path, capsule, dot;
@@ -489,6 +539,8 @@ require("./styles/main.scss");
 
 var _header = require("./js/header");
 
+var _hero = require("./js/hero");
+
 var _work = require("./js/work");
 
 var _about = require("./js/about");
@@ -500,6 +552,9 @@ var _contact = require("./js/contact");
 const header = new _header.Header();
 header.initHeader(); // WORK
 
+const hero = new _hero.Hero();
+hero.initHero(); // WORK
+
 const work = new _work.Work();
 work.toggleProjectPanels(); // ABOUT
 
@@ -508,7 +563,7 @@ about.initAbout(); // CONTACT
 
 const contact = new _contact.Contact();
 contact.initForm();
-},{"./styles/main.scss":"styles/main.scss","./js/header":"js/header.js","./js/work":"js/work.js","./js/about":"js/about.js","./js/contact":"js/contact.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./styles/main.scss":"styles/main.scss","./js/header":"js/header.js","./js/hero":"js/hero.js","./js/work":"js/work.js","./js/about":"js/about.js","./js/contact":"js/contact.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

@@ -54,9 +54,11 @@
     font-weight: bold;
   }
 
-  &:hover {
-    color: $primary-color;
-    text-shadow: 0 0 4px rgba($color: $primary-color, $alpha: 1);
+  @media (min-width: $screen-md) {
+    &:hover {
+      color: $primary-color;
+      text-shadow: 0 0 4px rgba($color: $primary-color, $alpha: 1);
+    }
   }
 
   &.active {
@@ -131,11 +133,6 @@
       transform: scale(0);
     }
   }
-  // &.inActive {
-  //   // box-shadow: 0 0 100000px 1000px red;
-  //   animation: socialBlockAnimationHide 0.6s ease-in;
-  //   transform: scale(0);
-  // }
 }
 
 .header--social--list {
@@ -150,12 +147,12 @@
 
   &:hover {
     svg {
-      fill: #808c9f;
+      fill: #2a6ad1;
     }
   }
   svg {
     fill: $white;
-    transition: 0.3s ease-in;
+    transition: 0.2s ease-in;
   }
 }
 

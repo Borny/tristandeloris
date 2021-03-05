@@ -28,7 +28,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-out;
   cursor: pointer;
 
   @media (min-width: $screen-md) {
@@ -84,7 +84,7 @@
     }
 
     h2 {
-      animation: titleIn 1s ease-in;
+      animation: titleIn 1s ease-out;
 
       @keyframes titleIn {
         from {
@@ -99,7 +99,7 @@
     }
 
     .detail {
-      animation: detailIn 1s ease-in;
+      animation: detailIn 1s ease-out;
 
       @keyframes detailIn {
         from {
@@ -114,7 +114,7 @@
     }
 
     .btn-visit {
-      animation: btnVisitIn 1s ease-in;
+      animation: btnVisitIn 1s ease-out;
 
       @keyframes btnVisitIn {
         from {
@@ -140,13 +140,13 @@
     justify-content: center;
     padding: 0;
     z-index: 1;
-    transition: 0.4s ease-in;
+    transition: 0.4s ease-out;
 
     .img {
       // width: 100%;
       // height: fit-content;
       margin: 0;
-      transition: 0.4s ease-in;
+      transition: 0.4s ease-out;
 
       // @media (min-width: $screen-md) {
       height: 100%;
@@ -176,16 +176,11 @@
       font-size: 2rem;
       text-transform: uppercase;
       font-weight: bold;
-      margin: 0 0 2rem;
 
       @media (min-width: $screen-md) {
         font-size: 3rem;
         white-space: nowrap;
       }
-    }
-
-    .detail {
-      margin: 0 0 2rem;
     }
   }
 
@@ -199,7 +194,7 @@
     background: transparent;
     font-weight: $fontWeightMedium;
     font-size: 1.2rem;
-    transition: 0.4s ease-in;
+    transition: 0.4s ease-out;
     text-align: center;
 
     @media (min-width: $screen-md) {
