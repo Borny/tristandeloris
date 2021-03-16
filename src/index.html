@@ -18,7 +18,7 @@
     <header class="header">
       <!-- TITLE -->
       <div class="header--title__container">
-        <div class="header--title__backdrop" id="header-backdrop"></div>
+        <div class="header--title__backdrop" id="header-title-backdrop"></div>
         <button id="header-title" class="header--title">
           <span class="header--title--firstname">Tristan</span>
           <span class="header--title--lastname">Deloris</span>
@@ -78,12 +78,28 @@
       </div>
 
       <!-- NAVIGATION -->
+
       <nav class="main-navigation">
-        <ul class="main-navigation--list">
-          <li class="main-navigation--item">Home</li>
-          <li class="main-navigation--item">My Work</li>
-          <li class="main-navigation--item">About</li>
-          <li class="main-navigation--item">Contact</li>
+        <!-- TOGGLE SIDENAV BUTTON -->
+        <div class="header--nav__backdrop" id="header-nav-backdrop"></div>
+        <button id="nav-btn" class="btn nav-btn open-btn">
+          <i class="icon fas fa-bars active"></i>
+          <i class="icon fas fa-times"></i>
+        </button>
+
+        <ul id="nav-list" class="main-navigation--list">
+          <li class="main-navigation--item">
+            <a class="link" href="#hero">Home</a>
+          </li>
+          <li class="main-navigation--item">
+            <a class="link" href="#work">My Work</a>
+          </li>
+          <li class="main-navigation--item">
+            <a class="link" href="#about">About</a>
+          </li>
+          <li class="main-navigation--item">
+            <a class="link" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -91,7 +107,41 @@
     <!-- MAIN -->
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <section class="hero" id="hero">
+        <!-- MOBILE -->
+        <img
+          src="./img/pics/rail-road-down-center.jpg"
+          alt="rail road hawaii"
+          class="hero__bg-img hero__bg-img--mobile desktop-hidden active"
+        />
+        <img
+          src="./img/pics/hourtin-sunset.jpg"
+          alt="hourtin sunset"
+          class="hero__bg-img hero__bg-img--mobile desktop-hidden"
+        />
+        <img
+          src="./img/pics/bx-rooftop.jpg"
+          alt="bordeaux rooftops"
+          class="hero__bg-img hero__bg-img--mobile desktop-hidden"
+        />
+
+        <!-- DESKTOP -->
+        <img
+          src="./img/pics/maunakea.jpg"
+          alt="bordeaux rooftops"
+          class="hero__bg-img hero__bg-img--desktop mobile-hidden active"
+        />
+        <img
+          src="./img/pics/kalalau-beach.jpg"
+          alt="kalalau beach"
+          style="transform: rotateY(180deg)"
+          class="hero__bg-img hero__bg-img--desktop mobile-hidden"
+        />
+        <img
+          src="./img/pics/pamukkale.jpg"
+          alt="pamukkale"
+          class="hero__bg-img hero__bg-img--desktop mobile-hidden"
+        />
         <div class="welcome-text">
           <div class="welcome-text--logo"></div>
           <div class="welcome-text--content">
@@ -138,7 +188,7 @@
       </section>
 
       <!-- WORK -->
-      <section class="work">
+      <section class="work" id="work">
         <div class="section-title">My <span>Work</span></div>
         <div class="section-main">
           <div class="portfolio">
@@ -230,7 +280,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="section-title">About <span>Me</span></div>
         <div class="section-content">
           <p>Web Developer...but not only!</p>
@@ -437,7 +487,7 @@
       </section>
 
       <!-- CONTACT -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="section-title">Contact <span>Me</span></div>
         <div class="section-main">
           <div class="form-wrapper">

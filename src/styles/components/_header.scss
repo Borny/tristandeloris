@@ -15,7 +15,8 @@
   height: 50px;
 }
 
-.header--title__backdrop {
+.header--title__backdrop,
+.header--nav__backdrop {
   &.active {
     position: fixed;
     top: 0;
@@ -24,6 +25,11 @@
     width: 100vw;
     height: 100vh;
     background: transparent;
+  }
+}
+.header--nav__backdrop {
+  &.active {
+    background: rgba($color: $black, $alpha: 0.7);
   }
 }
 
@@ -158,8 +164,65 @@
 
 // MAIN NAV
 .main-navigation {
-  color: $white;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  flex-flow: column;
   text-align: right;
+
+  &--list {
+    padding: 0 0.5rem 0 0;
+    height: 0;
+    // overflow: hidden;
+
+    &.active {
+      height: auto;
+      .main-navigation--item {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &--item {
+    padding: 0.5rem 0;
+    transform: translateX(200%);
+    transition: 0.4s ease-in;
+    font-size: 1.5rem;
+
+    .link {
+      color: $white;
+    }
+
+    &:nth-child(1) {
+      // transition-delay: 1s;
+    }
+    &:nth-child(2) {
+      transition-delay: 0.1s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.2s;
+    }
+    &:nth-child(4) {
+      transition-delay: 0.3s;
+    }
+  }
+}
+
+.nav-btn {
+  background: transparent;
+  padding: 0.5rem 0 0.5rem 1rem;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+
+  .icon {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }
 
 // @keyframes socialBlockAnimationHide {

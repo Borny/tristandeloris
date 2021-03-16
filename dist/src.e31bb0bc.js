@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -144,12 +144,12 @@ function getBundleURL() {
 }
 
 function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
 }
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js"}],"styles/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\maunakea.jpg":[["maunakea.3693c564.jpg","img/pics/maunakea.jpg"],"img/pics/maunakea.jpg"],"C:\\Users\\Tristan\\Desktop\\projects\\tristandeloris\\src\\img\\pics\\crater-center.jpg":[["crater-center.cb31532d.jpg","img/pics/crater-center.jpg"],"img/pics/crater-center.jpg"],"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"js/header.js":[function(require,module,exports) {
+},{"/home/mat/projects/tristandeloris/src/img/pics/crater-center.jpg":[["crater-center.cb31532d.jpg","img/pics/crater-center.jpg"],"img/pics/crater-center.jpg"],"_css_loader":"../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -201,15 +201,25 @@ class Header {
   constructor() {
     this.headerTitleBtn = document.getElementById("header-title");
     this.headerSocial = document.getElementById("header-social");
-    this.headerBackdrop = document.getElementById("header-backdrop");
+    this.headerTitleBackdrop = document.getElementById("header-title-backdrop");
+    this.headerNavBackdrop = document.getElementById("header-nav-backdrop");
+    this.navBtn = document.getElementById("nav-btn");
+    this.navBtnIcons = this.navBtn.querySelectorAll(".icon");
+    this.navList = document.getElementById("nav-list");
   }
 
   initHeader() {
     this.headerTitleBtn.addEventListener("click", () => {
       this.toggleHeaderTitle();
     });
-    this.headerBackdrop.addEventListener("click", () => {
+    this.headerTitleBackdrop.addEventListener("click", () => {
       this.toggleHeaderTitle();
+    });
+    this.headerNavBackdrop.addEventListener("click", () => {
+      this.toggleNav();
+    });
+    this.navBtn.addEventListener("click", () => {
+      this.toggleNav();
     });
   }
 
@@ -217,7 +227,13 @@ class Header {
     this.headerSocial.classList.toggle("active");
     this.headerSocial.classList.contains("active") ? this.headerSocial.classList.remove("iddle") : this.headerSocial.classList.add("iddle");
     this.headerTitleBtn.classList.toggle("active");
-    this.headerBackdrop.classList.toggle("active");
+    this.headerTitleBackdrop.classList.toggle("active");
+  }
+
+  toggleNav() {
+    this.navBtnIcons.forEach(icon => icon.classList.toggle("active"));
+    this.navList.classList.toggle("active");
+    this.headerNavBackdrop.classList.contains("active") ? this.headerNavBackdrop.classList.remove("active") : this.headerNavBackdrop.classList.add("active");
   }
 
 }
@@ -244,25 +260,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 class Hero {
   constructor() {
     this.heroSection = document.querySelector(".hero");
+    this.imgsMobile = document.querySelectorAll(".hero__bg-img--mobile");
+    this.imgsDesktop = document.querySelectorAll(".hero__bg-img--desktop");
   }
 
   initHero() {
-    // console.log(imageURL);
-    const railImg = "rail-road-down.jpg";
-    const sunsetImg = "/img/pics/hourtin-sunset.jpg";
     let idx = 0;
-    const imgs = [_railRoadDownCenter.default, _hourtinSunset.default //   "https://images.unsplash.com/photo-1536744052983-bcf122437f48?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80",
-    //   "https://images.unsplash.com/photo-1531743672295-bbd901790069?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80",
-    ];
-    this.heroSection.style.backgroundImage = "url('".concat(imgs[idx], "')");
+    let imgs = this.imgsMobile;
+
+    if (window.innerWidth >= 992) {
+      imgs = this.imgsDesktop;
+    }
+
     setInterval(() => {
-      console.log(idx);
-      this.heroSection.style.backgroundImage = "url('".concat(imgs[idx], "')");
+      imgs.forEach(img => img.classList.remove("active"));
       idx++;
 
       if (idx > imgs.length - 1) {
         idx = 0;
       }
+
+      imgs[idx].classList.add("active");
     }, 4000);
   }
 
@@ -563,7 +581,7 @@ about.initAbout(); // CONTACT
 
 const contact = new _contact.Contact();
 contact.initForm();
-},{"./styles/main.scss":"styles/main.scss","./js/header":"js/header.js","./js/hero":"js/hero.js","./js/work":"js/work.js","./js/about":"js/about.js","./js/contact":"js/contact.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./styles/main.scss":"styles/main.scss","./js/header":"js/header.js","./js/hero":"js/hero.js","./js/work":"js/work.js","./js/about":"js/about.js","./js/contact":"js/contact.js"}],"../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -591,7 +609,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59538" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45837" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -767,5 +785,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/src.e31bb0bc.js.map
