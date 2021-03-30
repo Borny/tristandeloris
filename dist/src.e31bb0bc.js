@@ -206,6 +206,7 @@ class Header {
     this.navBtn = document.getElementById("nav-btn");
     this.navBtnIcons = this.navBtn.querySelectorAll(".icon");
     this.navList = document.getElementById("nav-list");
+    this.navItems = this.navList.querySelectorAll('.main-navigation__item');
   }
 
   initHeader() {
@@ -221,6 +222,7 @@ class Header {
     this.navBtn.addEventListener("click", () => {
       this.toggleNav();
     });
+    this.navItems.forEach(item => item.addEventListener('click', () => this.toggleNav()));
   }
 
   toggleHeaderTitle() {
@@ -581,7 +583,42 @@ about.initAbout(); // CONTACT
 
 const contact = new _contact.Contact();
 contact.initForm();
-},{"./styles/main.scss":"styles/main.scss","./js/header":"js/header.js","./js/hero":"js/hero.js","./js/work":"js/work.js","./js/about":"js/about.js","./js/contact":"js/contact.js"}],"../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+let deferredPrompt;
+const installBtn = document.getElementById('install-app'); // SERVICE WORKER
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register("/sw.js").then(() => {
+    console.log('Service worker registered!');
+  });
+} // // DEFERRING THE INSTALLATION
+// console.log('test')
+
+
+window.addEventListener('beforeinstallprompt', event => {
+  console.log('beforeinstallprompt fired');
+  event.preventDefault();
+  deferredPrompt = event;
+  return false;
+}); // INSTALL THE APP
+
+installBtn.addEventListener('click', () => {
+  console.log('install the app');
+
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(choiceResult => {
+      console.log(choiceResult.outcome);
+
+      if (choiceResult.outcome === 'dismissed') {
+        console.log('User canceled installation');
+      } else {
+        console.log('User added to home screen');
+      }
+    });
+    deferredPrompt = null;
+  }
+});
+},{"./styles/main.scss":"styles/main.scss","./js/header":"js/header.js","./js/hero":"js/hero.js","./js/work":"js/work.js","./js/about":"js/about.js","./js/contact":"js/contact.js","/home/mat/projects/tristandeloris/src/sw.js":[["sw.js","sw.js"],"sw.js.map","sw.js"]}],"../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -609,7 +646,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45837" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38981" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

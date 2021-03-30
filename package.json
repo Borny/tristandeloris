@@ -4,9 +4,8 @@
   "description": "Professional website of Tristan Deloris Fullstack Javascript Developer",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "rm -r build/ && parcel build src/index.html -d build --public-url  ./ --no-source-maps",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "rm -r dist/ && parcel src/index.html",
+    "build": "rm -r build/ && parcel build src/index.html -d build --public-url  ./ --no-source-maps"
   },
   "keywords": [
     "tristan",

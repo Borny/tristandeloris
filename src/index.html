@@ -11,24 +11,78 @@
       crossorigin="anonymous"
     />
     <title>Tristan Deloris | Fullstack Javascript Developer</title>
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="PWAGram" />
+
+    <link rel="icon" type="/favicon.ico" sizes="16x16" href="./favicon.ico" />
+
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/icon/apple-icon-57x57.png"
+      sizes="57x57"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/icon/apple-icon-60x60.png"
+      sizes="60x60"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/icon/apple-icon-72x72.png"
+      sizes="72x72"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/icon/apple-icon-76x76.png"
+      sizes="76x76"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/icon/apple-icon-114x114.png"
+      sizes="114x114"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/icon/apple-icon-120x120.png"
+      sizes="120x120"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/icon/apple-icon-144x144.png"
+      sizes="144x144"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/icon/apple-icon-152x152.png"
+      sizes="152x152"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/icons/icon/apple-icon-180x180.png"
+      sizes="180x180"
+    />
   </head>
 
   <body>
     <!-- HEADER -->
     <header class="header">
       <!-- TITLE -->
-      <div class="header--title__container">
-        <div class="header--title__backdrop" id="header-title-backdrop"></div>
-        <button id="header-title" class="header--title">
-          <span class="header--title--firstname">Tristan</span>
-          <span class="header--title--lastname">Deloris</span>
+      <div class="header__title__container">
+        <div class="header__title__backdrop" id="header-title-backdrop"></div>
+        <button id="header-title" class="header__title">
+          <span class="header__title__firstname">Tristan</span>
+          <span class="header__title__lastname">Deloris</span>
+          <span class="header__title__arrow">></span>
         </button>
-        <p id="header-subtitle" class="header--title--subtitle">
+        <p id="header-subtitle" class="header__title__subtitle">
           Web Developer
         </p>
-        <div id="header-social" class="header--social__container">
-          <ul class="header--social--list">
-            <li class="header--social--item">
+        <div id="header-social" class="header__social__container">
+          <ul class="header__social__list">
+            <li class="header__social__item">
               <a
                 href="https://www.linkedin.com/in/tristandeloris/"
                 target="_blank"
@@ -45,7 +99,7 @@
                 </svg>
               </a>
             </li>
-            <li class="header--social--item">
+            <li class="header__social__item">
               <a href="https://codepen.io/Borny" target="_blank">
                 <svg
                   role="img"
@@ -59,7 +113,7 @@
                 </svg>
               </a>
             </li>
-            <li class="header--social--item">
+            <li class="header__social__item">
               <a href="https://github.com/Borny" target="_blank">
                 <svg
                   role="img"
@@ -81,24 +135,30 @@
 
       <nav class="main-navigation">
         <!-- TOGGLE SIDENAV BUTTON -->
-        <div class="header--nav__backdrop" id="header-nav-backdrop"></div>
+        <div class="header__nav__backdrop" id="header-nav-backdrop"></div>
         <button id="nav-btn" class="btn nav-btn open-btn">
           <i class="icon fas fa-bars active"></i>
           <i class="icon fas fa-times"></i>
         </button>
 
-        <ul id="nav-list" class="main-navigation--list">
-          <li class="main-navigation--item">
+        <ul id="nav-list" class="main-navigation__list">
+          <li class="main-navigation__item">
             <a class="link" href="#hero">Home</a>
           </li>
-          <li class="main-navigation--item">
+          <li class="main-navigation__item">
             <a class="link" href="#work">My Work</a>
           </li>
-          <li class="main-navigation--item">
+          <li class="main-navigation__item">
             <a class="link" href="#about">About</a>
           </li>
-          <li class="main-navigation--item">
+          <li class="main-navigation__item">
             <a class="link" href="#contact">Contact</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="link" href="/pages/feed.html">Feed</a>
+          </li>
+          <li class="main-navigation__item">
+            <button id="install-app">Install</button>
           </li>
         </ul>
       </nav>
