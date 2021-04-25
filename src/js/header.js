@@ -1,13 +1,16 @@
 export class Header {
   constructor() {
     this.headerTitleBtn = document.getElementById("header-title")
+    this.headerTitleArrow = document.getElementsByClassName("header__title__arrow")[0]
     this.headerSocial = document.getElementById("header-social")
     this.headerTitleBackdrop = document.getElementById("header-title-backdrop")
     this.headerNavBackdrop = document.getElementById("header-nav-backdrop")
+    // this.togglenavBtn = document.getElementById("toggle-nav-btn")
     this.navBtn = document.getElementById("nav-btn")
-    this.navBtnIcons = this.navBtn.querySelectorAll(".icon")
+    // this.navBtnIcons = this.navBtn.querySelectorAll(".icon")
     this.navList = document.getElementById("nav-list")
     this.navItems = this.navList.querySelectorAll('.main-navigation__item')
+    this.URL = 'http://localhost:9000/api/feed'
   }
 
   initHeader() {
@@ -41,7 +44,7 @@ export class Header {
   }
 
   toggleNav() {
-    this.navBtnIcons.forEach((icon) => icon.classList.toggle("active"))
+    this.navBtn.classList.toggle('open')
     this.navList.classList.toggle("active")
     this.headerNavBackdrop.classList.contains("active")
       ? this.headerNavBackdrop.classList.remove("active")

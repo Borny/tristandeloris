@@ -2,9 +2,9 @@
   "name": "tristandeloris",
   "version": "1.0.0",
   "description": "Professional website of Tristan Deloris Fullstack Javascript Developer",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "dev": "rm -r dist/ && parcel src/index.html",
+    "dev": "rm -r dist/ && parcel src/index.html src/pages/*.html",
     "build": "rm -r build/ && parcel build src/index.html -d build --public-url  ./ --no-source-maps"
   },
   "keywords": [
@@ -45,5 +45,9 @@
   },
   "browserslist": [
     "since 2017-06"
-  ]
+  ],
+  "dependencies": {
+    "idb": "^6.0.0",
+    "utility": "^1.17.0"
+  }
 }

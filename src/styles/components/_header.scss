@@ -1,3 +1,6 @@
+$zindex--header-title-container: 10;
+$zindex--main-navigation: 15;
+
 .header {
   position: fixed;
   top: 0;
@@ -13,6 +16,7 @@
 .header__title__container {
   flex: 1;
   height: 50px;
+  z-index: $zindex--header-title-container;
 }
 
 .header__title__backdrop,
@@ -62,6 +66,7 @@
 
   &__arrow {
     margin: 0 0 0 0.3rem;
+    transition: text-shadow 0.2s ease-out, color 0.2s ease-out;
     animation: swing 2s linear infinite;
 
     @keyframes swing {
@@ -171,7 +176,7 @@
 
   &:hover {
     svg {
-      fill: #2a6ad1;
+      fill: #3c3c33;
     }
   }
   svg {
@@ -183,20 +188,33 @@
 // MAIN NAV
 .main-navigation {
   display: flex;
-  // justify-content: center;
   align-items: flex-end;
   flex-flow: column;
   text-align: right;
+  z-index: $zindex--main-navigation;
 
   &__list {
-    // padding: 0 0.5rem 0 0;
     height: 0;
-    // overflow: hidden;
 
     &.active {
       height: auto;
       .main-navigation__item {
         transform: translateX(0);
+        &:nth-child(2) {
+          transition-delay: 0.1s;
+        }
+        &:nth-child(3) {
+          transition-delay: 0.2s;
+        }
+        &:nth-child(4) {
+          transition-delay: 0.3s;
+        }
+        &:nth-child(5) {
+          transition-delay: 0.4s;
+        }
+        &:nth-child(6) {
+          transition-delay: 0.5s;
+        }
       }
     }
   }
@@ -205,61 +223,65 @@
     padding: 0.5rem 0;
     transform: translateX(200%);
     transition: 0.4s ease-in;
-    font-size: 1.5rem;
+    font-size: 1rem;
+
+    @media (min-width: $screen-md) {
+      font-size: 1.5rem;
+    }
 
     .link {
       color: $white;
     }
-
-    &:nth-child(1) {
-      // transition-delay: 1s;
-    }
-    &:nth-child(2) {
-      transition-delay: 0.1s;
-    }
-    &:nth-child(3) {
-      transition-delay: 0.2s;
-    }
-    &:nth-child(4) {
-      transition-delay: 0.3s;
-    }
-    &:nth-child(5) {
-      transition-delay: 0.4s;
-    }
-    &:nth-child(6) {
-      transition-delay: 0.5s;
-    }
   }
 }
 
-.nav-btn {
+.open-btn {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 30px;
+  padding: 0.3rem;
   background: transparent;
-  padding: 0.5rem 0 0.5rem 1rem;
-  color: $white;
   cursor: pointer;
-  font-size: 1.5rem;
-  // margin: 0 0 1rem;
 
-  .icon {
-    display: none;
+  span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background: $white;
+    transition: 0.5s;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 
-    &.active {
-      display: block;
+    &:first-child {
+      transform-origin: 0% 0%;
+    }
+  }
+
+  &.open {
+    span {
+      &:first-child {
+        transform: rotate(45deg) translate(2px, -6px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        transform: scale(0.2);
+      }
+
+      &:last-child {
+        transform: rotate(-45deg) translate(1px, 3px);
+      }
     }
   }
 }
 
-// @keyframes socialBlockAnimationHide {
-//   0% {
-//     transform: scale(1);
-//   }
-//   15% {
-//     transform: scale(0.95);
-//   }
-//   30% {
-//     transform: scale(1.15);
-//   }
-//   100% {
-//     transform: scale(0);
-//   }
-// }
+.btn-ask-notification,
+.btn-install {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+}

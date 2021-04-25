@@ -28,6 +28,10 @@ body {
   @media (min-width: $screen-sm) {
     font-size: 1em;
   }
+
+  &.modal--open{
+    overflow: hidden;
+  }
 }
 
 #root {
