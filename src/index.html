@@ -34,7 +34,7 @@
     <!-- TITLE -->
     <div class="header__title__container hideable">
       <div class="header__title__backdrop" id="header-title-backdrop"></div>
-      <button id="header-title" class="header__title">
+      <button type="button" id="header-title" class="header__title">
         <span class="header__title__firstname">Tristan</span>
         <span class="header__title__lastname">Deloris</span>
         <span class="header__title__arrow">></span>
@@ -54,7 +54,7 @@
             </a>
           </li>
           <li class="header__social__item">
-            <a href="https://codepen.io/Borny" target="_blank">
+            <a href="https://codepen.io/Borny/pens/public" target="_blank">
               <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <title>CodePen icon</title>
                 <path
@@ -80,7 +80,7 @@
     <nav class="main-navigation hideable">
       <!-- TOGGLE SIDENAV BUTTON -->
       <div class="header__nav__backdrop" id="header-nav-backdrop"></div>
-      <button id="nav-btn" class="btn nav-btn open-btn">
+      <button type="button" id="nav-btn" class="btn nav-btn open-btn">
         <span></span>
         <span></span>
         <span></span>
@@ -88,14 +88,26 @@
 
       <ul id="nav-list" class="main-navigation__list">
         <li class="main-navigation__item">
-          <button class="btn-install" id="install-app">Install</button>
+          <a class="link" href="#home">Home</a>
         </li>
         <li class="main-navigation__item">
+          <a class="link" href="#work">Work</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="link" href="#about">About</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="link" href="#contact">Contact</a>
+        </li>
+        <!-- <li class="main-navigation__item">
           <a class="link" href="/pages/feed.html">Feed</a>
         </li>
         <li class="main-navigation__item">
-          <button class="btn-ask-notification" id="enable-notification">Enable Notifications</button>
+          <button type="button" class="btn-install" id="install-app">Install</button>
         </li>
+        <li class="main-navigation__item">
+          <button type="button" class="btn-ask-notification" id="enable-notification">Enable Notifications</button>
+        </li> -->
       </ul>
     </nav>
   </header>
@@ -122,11 +134,11 @@
         <div class="welcome-text--logo"></div>
         <div class="welcome-text--content">
           <p>Web Developement</p>
-          <p>Design</p>
+          <p>& Design</p>
           <!-- <small>...and a few more things!</small> -->
         </div>
       </div>
-      <!-- <button type="button" class="btn text-action" id="text-action">Hide text</button> -->
+      <button type="button" class="btn text-action" id="text-action">Hide text</button>
       <!-- <div class="scroll-svg__container">
         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="57" viewBox="0 0 27 57">
           <g transform="translate(-917 -882)">
@@ -200,7 +212,7 @@
                 Commandes et <strong>paiements en ligne</strong>, réservation de salles et d'espaces de coworking,
                 consultation des nouveautés et évènements.
               </p>
-              <a href="https://borny.github.io/ionic-timer/home/timer" target="blank" class="btn btn-visit">Visit</a>
+              <a href="https://www.lacleduquai.com" target="blank" class="btn btn-visit">Visit</a>
             </div>
           </div>
         </div>
@@ -219,7 +231,7 @@
           <div class="skill">
             <div class="svg-container svg-container-one">
               <div class="capsule capsule-one">
-                <button class="btn btn-arrow">
+                <button type="button" class="btn btn-arrow">
                   <i class="fas fa-chevron-left icon"></i>
                 </button>
                 <div class="content">Surfer</div>
@@ -242,7 +254,7 @@
           <div class="skill">
             <div class="svg-container svg-container-two">
               <div class="capsule capsule-two">
-                <button class="btn btn-arrow">
+                <button type="button" class="btn btn-arrow">
                   <i class="fas fa-chevron-left icon"></i>
                 </button>
                 <div class="content">Capoeira</div>
@@ -264,7 +276,7 @@
             <div class="svg-container svg-container-three">
               <div class="capsule capsule-three">
                 <div class="content">Traveler</div>
-                <button class="btn btn-arrow">
+                <button type="button" class="btn btn-arrow">
                   <i class="fas fa-chevron-right icon"></i>
                 </button>
               </div>
@@ -286,7 +298,7 @@
             <div class="svg-container svg-container-four">
               <div class="capsule capsule-four">
                 <div class="content">DIY</div>
-                <button class="btn btn-arrow">
+                <button type="button" class="btn btn-arrow">
                   <i class="fas fa-chevron-right icon"></i>
                 </button>
               </div>

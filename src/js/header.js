@@ -5,9 +5,7 @@ export class Header {
     this.headerSocial = document.getElementById("header-social")
     this.headerTitleBackdrop = document.getElementById("header-title-backdrop")
     this.headerNavBackdrop = document.getElementById("header-nav-backdrop")
-    // this.togglenavBtn = document.getElementById("toggle-nav-btn")
     this.navBtn = document.getElementById("nav-btn")
-    // this.navBtnIcons = this.navBtn.querySelectorAll(".icon")
     this.navList = document.getElementById("nav-list")
     this.navItems = this.navList.querySelectorAll('.main-navigation__item')
     this.URL = 'http://localhost:9000/api/feed'

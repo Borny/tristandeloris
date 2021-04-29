@@ -664,6 +664,7 @@ select:-webkit-autofill:focus {
 }
 .main-navigation__list {
   height: 0;
+  padding: 1rem 0 0;
 }
 .main-navigation__list.active {
   height: auto;
@@ -686,19 +687,22 @@ select:-webkit-autofill:focus {
 .main-navigation__list.active .main-navigation__item:nth-child(6) {
   transition-delay: 0.5s;
 }
+.main-navigation__list.active .main-navigation__item:nth-child(7) {
+  transition-delay: 0.6s;
+}
 .main-navigation__item {
   padding: 0.5rem 0;
   transform: translateX(200%);
   transition: 0.4s ease-in;
   font-size: 1rem;
 }
-@media (min-width: 992px) {
-  .main-navigation__item {
-    font-size: 1.5rem;
-  }
-}
 .main-navigation__item .link {
   color: #fff;
+  transition: 0.2s ease-in;
+}
+.main-navigation__item .link:hover {
+  color: lightblue;
+  margin-right: 0.5rem;
 }
 
 .open-btn {
@@ -1008,6 +1012,17 @@ select:-webkit-autofill:focus {
   font-size: 2rem;
   flex: 1;
   padding: 1rem;
+  animation: mainContentFadeIn 1s ease-out;
+}
+@keyframes mainContentFadeIn {
+  from {
+    opacity: 0;
+    margin-top: -200px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 @media (min-width: 768px) {
   .welcome-text--content {
@@ -1020,29 +1035,6 @@ select:-webkit-autofill:focus {
 @media (min-width: 768px) {
   .welcome-text--logo {
     flex: 1;
-  }
-}
-
-.scroll-svg__container {
-  flex: 1;
-  width: 27px;
-  height: 57px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 3;
-  align-items: center;
-}
-.scroll-svg__container .scroll-btn {
-  animation: scrollSvgAnimation 1s infinite alternate-reverse;
-}
-@keyframes scrollSvgAnimation {
-  from {
-    transform: translate(923px, 890px);
-    z-index: 5;
-  }
-  to {
-    transform: translate(923px, 916px);
   }
 }
 
@@ -1615,7 +1607,7 @@ select:-webkit-autofill:focus {
   text-align: center;
 }
 .contact .message.success {
-  border-bottom: 2px solid lightblue;
+  color: #fff;
 }
 .contact .message.error {
   font-weight: 700;

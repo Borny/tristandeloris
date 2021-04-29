@@ -11,11 +11,11 @@ const header = new Header()
 header.initHeader()
 
 // SERVICE WORKER
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then(() => {
-        console.log('[Index JS] : Service worker registered!')
-    })
-}
+// if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker.register('/sw.js').then(() => {
+//         console.log('[Index JS] : Service worker registered!')
+//     })
+// }
 
 // DEFERRING THE INSTALLATION
 window.addEventListener('beforeinstallprompt', (event) => {

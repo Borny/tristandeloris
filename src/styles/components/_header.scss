@@ -195,6 +195,7 @@ $zindex--main-navigation: 15;
 
   &__list {
     height: 0;
+    padding: 1rem 0 0;
 
     &.active {
       height: auto;
@@ -215,6 +216,9 @@ $zindex--main-navigation: 15;
         &:nth-child(6) {
           transition-delay: 0.5s;
         }
+        &:nth-child(7) {
+          transition-delay: 0.6s;
+        }
       }
     }
   }
@@ -225,12 +229,17 @@ $zindex--main-navigation: 15;
     transition: 0.4s ease-in;
     font-size: 1rem;
 
-    @media (min-width: $screen-md) {
-      font-size: 1.5rem;
-    }
+    // @media (min-width: $screen-md) {
+    //   font-size: 1.5rem;
+    // }
 
     .link {
       color: $white;
+      transition: 0.2s ease-in;
+      &:hover {
+        color: $primary-color;
+        margin-right: 0.5rem;
+      }
     }
   }
 }

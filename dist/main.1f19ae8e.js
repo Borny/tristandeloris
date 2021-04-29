@@ -543,10 +543,8 @@ class Header {
     this.headerTitleArrow = document.getElementsByClassName("header__title__arrow")[0];
     this.headerSocial = document.getElementById("header-social");
     this.headerTitleBackdrop = document.getElementById("header-title-backdrop");
-    this.headerNavBackdrop = document.getElementById("header-nav-backdrop"); // this.togglenavBtn = document.getElementById("toggle-nav-btn")
-
-    this.navBtn = document.getElementById("nav-btn"); // this.navBtnIcons = this.navBtn.querySelectorAll(".icon")
-
+    this.headerNavBackdrop = document.getElementById("header-nav-backdrop");
+    this.navBtn = document.getElementById("nav-btn");
     this.navList = document.getElementById("nav-list");
     this.navItems = this.navList.querySelectorAll('.main-navigation__item');
     this.URL = 'http://localhost:9000/api/feed';
@@ -598,13 +596,12 @@ const URL_SUBSCRIPTIONS = 'http://localhost:9000/api/subscription'; // HEADER
 
 const header = new _header.Header();
 header.initHeader(); // SERVICE WORKER
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register("/sw.js").then(() => {
-    console.log('[Index JS] : Service worker registered!');
-  });
-} // DEFERRING THE INSTALLATION
-
+// if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker.register('/sw.js').then(() => {
+//         console.log('[Index JS] : Service worker registered!')
+//     })
+// }
+// DEFERRING THE INSTALLATION
 
 window.addEventListener('beforeinstallprompt', event => {
   // console.log('beforeinstallprompt fired')
@@ -721,7 +718,7 @@ if ('Notification' in window) {
   askNotificationBtn.classList.add('show');
   askNotificationBtn.addEventListener('click', askNotificationPermission);
 }
-},{"./js/utility":"js/utility.js","./js/header":"js/header.js","/home/mat/projects/tristandeloris-pro/tristandeloris/src/sw.js":[["sw.js","sw.js"],"sw.js.map","sw.js"]}],"../../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./js/utility":"js/utility.js","./js/header":"js/header.js"}],"../../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -749,7 +746,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36081" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33331" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
