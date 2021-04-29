@@ -475,7 +475,7 @@ class Contact {
     this.errorMessage.classList.add("hidden");
 
     try {
-      const res = await fetch("https://tristandeloris.herokuapp.com/api/contact", // "http://localhost:9000/api/contact",
+      const res = await fetch("https://tristan-deloris-pro.herokuapp.com/api/contact", // "http://localhost:9000/api/contact",
       // 'http://localhost:9000/api/contactffff',
       {
         method: "POST",
