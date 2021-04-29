@@ -4,6 +4,10 @@ export class Work {
   }
 
   toggleProjectPanels() {
+    if (window.innerWidth >= 992) {
+      this.projects[0].classList.add("active");
+    }
+
     this.projects.forEach((project) => {
       project.addEventListener("click", () => {
         this.projects.forEach((proj) => {

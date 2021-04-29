@@ -11,7 +11,7 @@ export class About {
   }
 
   animateSkills() {
-    const triggerBottom = window.innerHeight / 2;
+    const triggerBottom = (window.innerHeight / 3) * 2;
 
     this.skills.forEach((skill, index) => {
       const svgContainer = skill.querySelector(".svg-container");

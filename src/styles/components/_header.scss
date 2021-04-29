@@ -1,3 +1,6 @@
+$zindex--header-title-container: 10;
+$zindex--main-navigation: 15;
+
 .header {
   position: fixed;
   top: 0;
@@ -10,12 +13,14 @@
 }
 
 // TITLE
-.header--title__container {
+.header__title__container {
   flex: 1;
   height: 50px;
+  z-index: $zindex--header-title-container;
 }
 
-.header--title__backdrop {
+.header__title__backdrop,
+.header__nav__backdrop {
   &.active {
     position: fixed;
     top: 0;
@@ -26,8 +31,13 @@
     background: transparent;
   }
 }
+.header__nav__backdrop {
+  &.active {
+    background: rgba($color: $black, $alpha: 0.7);
+  }
+}
 
-.header--title {
+.header__title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,8 +46,8 @@
   background-color: transparent;
   cursor: pointer;
 
-  &--firstname,
-  &--lastname {
+  &__firstname,
+  &__lastname {
     width: 14px;
     overflow: hidden;
     display: inline-block;
@@ -45,36 +55,57 @@
       color 0.2s ease-out;
   }
 
-  &--firstname {
+  &__firstname {
     width: 12px;
   }
 
-  &--lastname {
+  &__lastname {
     width: 15px;
     font-weight: bold;
   }
 
-  &:hover {
-    color: $primary-color;
-    text-shadow: 0 0 4px rgba($color: $primary-color, $alpha: 1);
+  &__arrow {
+    margin: 0 0 0 0.3rem;
+    transition: text-shadow 0.2s ease-out, color 0.2s ease-out;
+    animation: swing 2s linear infinite;
+
+    @keyframes swing {
+      0% {
+        transform: translateX(-2px);
+      }
+      50% {
+        transform: translateX(2px);
+      }
+      100% {
+        transform: translateX(-2px);
+      }
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &:hover {
+      color: $primary-color;
+      text-shadow: 0 0 4px rgba($color: $primary-color, $alpha: 1);
+    }
   }
 
   &.active {
-    .header--title--firstname {
+    .header__title__firstname {
       width: 70px;
     }
-    .header--title--lastname {
+
+    .header__title__lastname {
       width: 80px;
     }
 
-    + .header--title--subtitle {
+    + .header__title__subtitle {
       height: 20px;
     }
   }
 }
 
 // SUBTITLE
-.header--title--subtitle {
+.header__title__subtitle {
   color: $white;
   height: 0;
   overflow: hidden;
@@ -82,7 +113,7 @@
 }
 
 // SOCIAL
-.header--social__container {
+.header__social__container {
   position: fixed;
   z-index: -1;
 
@@ -131,51 +162,135 @@
       transform: scale(0);
     }
   }
-  // &.inActive {
-  //   // box-shadow: 0 0 100000px 1000px red;
-  //   animation: socialBlockAnimationHide 0.6s ease-in;
-  //   transform: scale(0);
-  // }
 }
 
-.header--social--list {
+.header__social__list {
   position: absolute;
   bottom: 20px;
   right: 160px;
 }
 
-.header--social--item {
+.header__social__item {
   width: 24px;
   margin: 0 0 0.5rem;
 
   &:hover {
     svg {
-      fill: #808c9f;
+      fill: #3c3c33;
     }
   }
   svg {
     fill: $white;
-    transition: 0.3s ease-in;
+    transition: 0.2s ease-in;
   }
 }
 
 // MAIN NAV
 .main-navigation {
-  color: $white;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column;
   text-align: right;
+  z-index: $zindex--main-navigation;
+
+  &__list {
+    height: 0;
+    padding: 1rem 0 0;
+
+    &.active {
+      height: auto;
+      .main-navigation__item {
+        transform: translateX(0);
+        &:nth-child(2) {
+          transition-delay: 0.1s;
+        }
+        &:nth-child(3) {
+          transition-delay: 0.2s;
+        }
+        &:nth-child(4) {
+          transition-delay: 0.3s;
+        }
+        &:nth-child(5) {
+          transition-delay: 0.4s;
+        }
+        &:nth-child(6) {
+          transition-delay: 0.5s;
+        }
+        &:nth-child(7) {
+          transition-delay: 0.6s;
+        }
+      }
+    }
+  }
+
+  &__item {
+    padding: 0.5rem 0;
+    transform: translateX(200%);
+    transition: 0.4s ease-in;
+    font-size: 1rem;
+
+    // @media (min-width: $screen-md) {
+    //   font-size: 1.5rem;
+    // }
+
+    .link {
+      color: $white;
+      transition: 0.2s ease-in;
+      &:hover {
+        color: $primary-color;
+        margin-right: 0.5rem;
+      }
+    }
+  }
 }
 
-// @keyframes socialBlockAnimationHide {
-//   0% {
-//     transform: scale(1);
-//   }
-//   15% {
-//     transform: scale(0.95);
-//   }
-//   30% {
-//     transform: scale(1.15);
-//   }
-//   100% {
-//     transform: scale(0);
-//   }
-// }
+.open-btn {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 30px;
+  padding: 0.3rem;
+  background: transparent;
+  cursor: pointer;
+
+  span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background: $white;
+    transition: 0.5s;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+
+    &:first-child {
+      transform-origin: 0% 0%;
+    }
+  }
+
+  &.open {
+    span {
+      &:first-child {
+        transform: rotate(45deg) translate(2px, -6px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        transform: scale(0.2);
+      }
+
+      &:last-child {
+        transform: rotate(-45deg) translate(1px, 3px);
+      }
+    }
+  }
+}
+
+.btn-ask-notification,
+.btn-install {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
