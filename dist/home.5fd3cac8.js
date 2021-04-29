@@ -475,8 +475,8 @@ class Contact {
     this.errorMessage.classList.add("hidden");
 
     try {
-      const res = await fetch( // "https://tristandeloris.herokuapp.com/api/contact",
-      "http://localhost:9000/api/contact", // 'http://localhost:9000/api/contactffff',
+      const res = await fetch("https://tristandeloris.herokuapp.com/api/contact", // "http://localhost:9000/api/contact",
+      // 'http://localhost:9000/api/contactffff',
       {
         method: "POST",
         headers: {
@@ -563,7 +563,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33331" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39739" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
