@@ -1,5 +1,3 @@
-import "../styles/main.scss"
-
 import { Hero } from "./hero"
 import { Work } from "./work"
 import { About } from "./about"
