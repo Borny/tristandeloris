@@ -47,6 +47,12 @@ export class Header {
     this.headerNavBackdrop.classList.contains("active")
       ? this.headerNavBackdrop.classList.remove("active")
       : this.headerNavBackdrop.classList.add("active")
+
+    // Close the header title if open
+    this.headerTitleBtn.classList.remove("active")
+    this.headerTitleBackdrop.classList.remove("active")
+    this.headerSocial.classList.remove("active")
+
   }
 
 }
