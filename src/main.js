@@ -26,24 +26,24 @@ window.addEventListener('beforeinstallprompt', (event) => {
 })
 
 // INSTALL THE APP
-installBtn.addEventListener('click', () => {
-    console.log('install the app')
-    if (deferredPrompt) {
-        deferredPrompt.prompt()
+// installBtn.addEventListener('click', () => {
+//     console.log('install the app')
+//     if (deferredPrompt) {
+//         deferredPrompt.prompt()
 
-        deferredPrompt.userChoice.then((choiceResult) => {
-            console.log(choiceResult.outcome)
+//         deferredPrompt.userChoice.then((choiceResult) => {
+//             console.log(choiceResult.outcome)
 
-            if (choiceResult.outcome === 'dismissed') {
-                console.log('User canceled installation')
-            } else {
-                console.log('User added to home screen')
-            }
-        })
+//             if (choiceResult.outcome === 'dismissed') {
+//                 console.log('User canceled installation')
+//             } else {
+//                 console.log('User added to home screen')
+//             }
+//         })
 
-        deferredPrompt = null
-    }
-})
+//         deferredPrompt = null
+//     }
+// })
 
 // NOTIFICATIONS
 function displayNotificationEnabled() {
@@ -133,8 +133,8 @@ function askNotificationPermission() {
     })
 }
 
-if ('Notification' in window) {
-    console.log('notif')
-    askNotificationBtn.classList.add('show')
-    askNotificationBtn.addEventListener('click', askNotificationPermission)
-}
+// if ('Notification' in window) {
+//     console.log('notif')
+//     askNotificationBtn.classList.add('show')
+//     askNotificationBtn.addEventListener('click', askNotificationPermission)
+// }

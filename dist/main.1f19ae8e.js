@@ -576,7 +576,11 @@ class Header {
   toggleNav() {
     this.navBtn.classList.toggle('open');
     this.navList.classList.toggle("active");
-    this.headerNavBackdrop.classList.contains("active") ? this.headerNavBackdrop.classList.remove("active") : this.headerNavBackdrop.classList.add("active");
+    this.headerNavBackdrop.classList.contains("active") ? this.headerNavBackdrop.classList.remove("active") : this.headerNavBackdrop.classList.add("active"); // Close the header title if open
+
+    this.headerTitleBtn.classList.remove("active");
+    this.headerTitleBackdrop.classList.remove("active");
+    this.headerSocial.classList.remove("active");
   }
 
 }
@@ -609,24 +613,22 @@ window.addEventListener('beforeinstallprompt', event => {
   deferredPrompt = event;
   return false;
 }); // INSTALL THE APP
-
-installBtn.addEventListener('click', () => {
-  console.log('install the app');
-
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then(choiceResult => {
-      console.log(choiceResult.outcome);
-
-      if (choiceResult.outcome === 'dismissed') {
-        console.log('User canceled installation');
-      } else {
-        console.log('User added to home screen');
-      }
-    });
-    deferredPrompt = null;
-  }
-}); // NOTIFICATIONS
+// installBtn.addEventListener('click', () => {
+//     console.log('install the app')
+//     if (deferredPrompt) {
+//         deferredPrompt.prompt()
+//         deferredPrompt.userChoice.then((choiceResult) => {
+//             console.log(choiceResult.outcome)
+//             if (choiceResult.outcome === 'dismissed') {
+//                 console.log('User canceled installation')
+//             } else {
+//                 console.log('User added to home screen')
+//             }
+//         })
+//         deferredPrompt = null
+//     }
+// })
+// NOTIFICATIONS
 
 function displayNotificationEnabled() {
   if ('serviceWorker' in navigator) {
@@ -711,13 +713,11 @@ function askNotificationPermission() {
       configurePushSubcription();
     }
   });
-}
-
-if ('Notification' in window) {
-  console.log('notif');
-  askNotificationBtn.classList.add('show');
-  askNotificationBtn.addEventListener('click', askNotificationPermission);
-}
+} // if ('Notification' in window) {
+//     console.log('notif')
+//     askNotificationBtn.classList.add('show')
+//     askNotificationBtn.addEventListener('click', askNotificationPermission)
+// }
 },{"./js/utility":"js/utility.js","./js/header":"js/header.js"}],"../../../../.nvm/versions/node/v14.16.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -746,7 +746,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33729" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46011" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

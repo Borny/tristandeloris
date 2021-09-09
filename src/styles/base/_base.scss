@@ -29,7 +29,7 @@ body {
     font-size: 1em;
   }
 
-  &.modal--open{
+  &.modal--open {
     overflow: hidden;
   }
 }
@@ -123,6 +123,10 @@ textarea {
 
 .invisible {
   visibility: hidden !important;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
 }
 
 //////////

@@ -1,5 +1,5 @@
-import railURL from "../img/pics/rail-road-down-center.jpg"
-import sunsetURL from "../img/pics/hourtin-sunset.jpg"
+// import railURL from "../img/pics/rail-road-down-center.jpg"
+// import sunsetURL from "../img/pics/hourtin-sunset.jpg"
 
 export class Hero {
   constructor() {

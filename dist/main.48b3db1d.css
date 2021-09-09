@@ -460,6 +460,10 @@ textarea:focus {
   visibility: hidden !important;
 }
 
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
 textarea:invalid,
 input:invalid {
   box-shadow: none;
@@ -523,10 +527,6 @@ select:-webkit-autofill:focus {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background: transparent;
-}
-
-.header__nav__backdrop.active {
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -1248,7 +1248,7 @@ select:-webkit-autofill:focus {
   align-items: center;
   flex: 1;
   min-height: 100vh;
-  background-image: url("/crater-center.cb31532d.jpg");
+  background-image: url("/crater-center.e7408736.jpg");
   background-repeat: no-repeat;
   background-size: 280%;
   background-position: center;

@@ -5,11 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tristan Deloris | Fullstack Javascript Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
-  <title>Tristan Deloris | Fullstack Javascript Developer</title>
-
   <link rel="stylesheet" href="./styles/main.scss" />
 
   <link rel="manifest" href="/manifest.webmanifest" />
@@ -90,7 +89,7 @@
 
       <ul id="nav-list" class="main-navigation__list">
         <li class="main-navigation__item">
-          <a class="link" href="#home">Home</a>
+          <a class="link" href="#hero">Home</a>
         </li>
         <li class="main-navigation__item">
           <a class="link" href="#work">Work</a>
@@ -119,19 +118,21 @@
     <!-- HERO -->
     <section class="hero" id="hero">
       <!-- MOBILE -->
-      <img src="./img/pics/rail-road-down-center.jpg" alt="rail road hawaii"
+      <img loading="lazy" src="./img/pics/compressed/rail-road-down-center.jpg" alt="rail road hawaii"
         class="hero__bg-img hero__bg-img--mobile desktop-hidden active" />
-      <img src="./img/pics/hourtin-sunset.jpg" alt="hourtin sunset"
+      <img loading="lazy" src="./img/pics/compressed/hourtin-sunset.jpg" alt="hourtin sunset"
         class="hero__bg-img hero__bg-img--mobile desktop-hidden" />
-      <img src="./img/pics/bx-rooftop.jpg" alt="bordeaux rooftops"
+      <img loading="lazy" src="./img/pics/compressed/bx-rooftop.jpg" alt="bordeaux rooftops"
         class="hero__bg-img hero__bg-img--mobile desktop-hidden" />
 
       <!-- DESKTOP -->
-      <img src="./img/pics/maunakea.jpg" alt="bordeaux rooftops"
-        class="hero__bg-img hero__bg-img--desktop mobile-hidden active" />
-      <img src="./img/pics/kalalau-beach.jpg" alt="kalalau beach" style="transform: rotateY(180deg)"
-        class="hero__bg-img hero__bg-img--desktop mobile-hidden" />
-      <img src="./img/pics/pamukkale.jpg" alt="pamukkale" class="hero__bg-img hero__bg-img--desktop mobile-hidden" />
+      <img loading="lazy" src="./img/pics/compressed/maunakea.jpg" srcset="./img/pics/compressed/maunakea.jpg 1000w"
+        alt="maunakea" class="hero__bg-img hero__bg-img--desktop mobile-hidden active" />
+      <img loading="lazy" src="./img/pics/compressed/maunakea.jpg"
+        srcset="./img/pics/compressed/kalalau-beach.jpg 1000w" alt="kalalau beach"
+        class="hero__bg-img hero__bg-img--desktop mobile-hidden rotate-y-180" />
+      <img loading="lazy" src="./img/pics/compressed/maunakea.jpg" srcset="./img/pics/compressed/pamukkale.jpg 1000w"
+        alt="pamukkale" class="hero__bg-img hero__bg-img--desktop mobile-hidden" />
       <div class="welcome-text hideable">
         <div class="welcome-text--logo"></div>
         <div class="welcome-text--content">
@@ -161,7 +162,8 @@
         <div class="portfolio">
           <div class="project">
             <div class="img-container">
-              <img class="img" alt="belaetcome" src="./img/pics/belaetcome.png" />
+              <img loading="lazy" class="img" alt="belaetcome" src="./img/pics/compressed/belaetcome.jpg" width="100"
+                height="100" />
             </div>
             <div class="panel">
               <h2>Compagnie Bela & Côme</h2>
@@ -180,7 +182,8 @@
           </div>
           <div class="project">
             <div class="img-container">
-              <img class="img" alt="ics france" src="./img/pics/ics.png" />
+              <img loading="lazy" class="img" alt="ics france" src="./img/pics/compressed/ics.jpg" width="100"
+                height="100" />
             </div>
             <div class="panel">
               <h2>
@@ -202,7 +205,8 @@
           </div>
           <div class="project">
             <div class="img-container">
-              <img class="img" alt="la cle du quai" src="./img/pics/lacleduquai.png" />
+              <img loading="lazy" class="img" alt="la cle du quai" src="./img/pics/compressed/lacleduquai.jpg"
+                width="100" height="100" />
             </div>
             <div class="panel">
               <h2>La Cle Du Quai</h2>

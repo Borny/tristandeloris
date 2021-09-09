@@ -4,7 +4,7 @@
   "description": "Professional website of Tristan Deloris Fullstack Javascript Developer",
   "main": "main.js",
   "scripts": {
-    "dev": "rm -r dist/ && parcel src/index.html src/pages/*.html",
+    "dev": "parcel src/index.html src/pages/*.html",
     "build": "rm -r build/ && parcel build src/index.html -d build --public-url  ./ --no-source-maps"
   },
   "keywords": [

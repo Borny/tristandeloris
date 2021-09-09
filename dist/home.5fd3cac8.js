@@ -117,11 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"img/pics/rail-road-down-center.jpg":[function(require,module,exports) {
-module.exports = "/rail-road-down-center.01d9c3c2.jpg";
-},{}],"img/pics/hourtin-sunset.jpg":[function(require,module,exports) {
-module.exports = "/hourtin-sunset.7c4dd7fb.jpg";
-},{}],"js/hero.js":[function(require,module,exports) {
+})({"js/hero.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -129,12 +125,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Hero = void 0;
 
-var _railRoadDownCenter = _interopRequireDefault(require("../img/pics/rail-road-down-center.jpg"));
-
-var _hourtinSunset = _interopRequireDefault(require("../img/pics/hourtin-sunset.jpg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+// import railURL from "../img/pics/rail-road-down-center.jpg"
+// import sunsetURL from "../img/pics/hourtin-sunset.jpg"
 class Hero {
   constructor() {
     this.heroSection = document.querySelector(".hero");
@@ -174,7 +166,7 @@ class Hero {
 }
 
 exports.Hero = Hero;
-},{"../img/pics/rail-road-down-center.jpg":"img/pics/rail-road-down-center.jpg","../img/pics/hourtin-sunset.jpg":"img/pics/hourtin-sunset.jpg"}],"js/work.js":[function(require,module,exports) {
+},{}],"js/work.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -489,7 +481,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33729" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46011" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
