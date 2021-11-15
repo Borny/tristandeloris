@@ -2,6 +2,18 @@
 // BOX SIZING FOR ALL ELEMENTS
 ////////////////////////////////
 
+// TODO: add loader
+// .loader {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background: red;
+//   color: blue;
+//   z-index: 300000;
+// }
+
 *,
 ::before,
 ::after {
@@ -98,9 +110,9 @@ textarea {
   }
 }
 
-///////////
+////////////
 // CLASSES
-///////////
+////////////
 .hidden {
   display: none !important;
 }

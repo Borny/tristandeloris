@@ -24,7 +24,7 @@
     align-items: center;
     flex: 1;
     min-height: 100vh;
-    background-image: url('/img/pics/compressed/crater-center.jpg');
+    background-image: url('../img/pics/compressed/crater-center.jpg');
     background-repeat: no-repeat;
     background-size: 280%;
     background-position: center;
@@ -78,6 +78,7 @@
 
     .capsule {
       position: absolute;
+      z-index: $zindex--capsule;
       border: 1px solid $white;
       border-radius: 50px;
       background: rgba($color: $white, $alpha: 0.3);
@@ -261,6 +262,7 @@
       }
     }
 
+    // Dots on the target
     .dot {
       position: absolute;
       display: block;

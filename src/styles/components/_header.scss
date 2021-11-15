@@ -236,6 +236,12 @@ $zindex--main-navigation: 15;
         margin-right: 0.5rem;
       }
     }
+    &:hover {
+      .link {
+        color: $primary-color;
+        margin-right: 0.5rem;
+      }
+    }
   }
 }
 
