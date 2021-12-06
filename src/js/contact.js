@@ -92,7 +92,7 @@ export class Contact {
     try {
       const res = await fetch(
         'https://tristan-deloris-pro.herokuapp.com/api/contact',
-        // "http://localhost:9000/api/contact",
+        // 'http://localhost:9000/api/contact',
         // 'http://localhost:9000/api/contactffff',
         {
           method: 'POST',
@@ -100,7 +100,9 @@ export class Contact {
           body: JSON.stringify(formData),
         }
       );
-      if (res.status === 200) {
+
+      console.log('[RESPONSE]', res);
+      if (res.status === 201) {
         this.loaderContact.classList.add('hidden');
         this.form.classList.add('hidden');
         this.successMessage.classList.remove('hidden');
