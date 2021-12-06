@@ -101,7 +101,6 @@ export class Contact {
         }
       );
 
-      console.log('[RESPONSE]', res);
       if (res.status === 201) {
         this.loaderContact.classList.add('hidden');
         this.form.classList.add('hidden');
@@ -114,7 +113,8 @@ export class Contact {
         throw new Error('Something went wrong');
       }
     } catch (error) {
-      console.log('contact error:', error);
+      // console.log('contact error:', error);
+
       //   this.form.classList.remove("hidden");
       this.form.classList.remove('loading');
       this.errorMessage.classList.remove('hidden');
