@@ -5,23 +5,8 @@ import { About } from './about';
 import { Contact } from './contact';
 
 // HEADER
-const header = new Header();
-header.initHeader();
-
-// HERO
-const hero = new Hero();
-hero.initHero();
-// hero.toggleText()
-
-// WORK
-const work = new Work();
-work.toggleProjectPanels();
-
-// ABOUT
-const about = new About();
-console.log('home js');
-about.initAbout();
-
-// CONTACT
-const contact = new Contact();
-contact.initForm();
+new Header();
+new Hero();
+new Work();
+new About();
+new Contact();

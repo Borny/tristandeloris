@@ -6,6 +6,8 @@ export class Hero {
     // this.hideableElements = document.querySelectorAll(".hideable")
     // this.toggleTextBtn = document.getElementById("text-action")
     this.imgTransition = 5000;
+
+    this.initHero();
   }
 
   initHero() {

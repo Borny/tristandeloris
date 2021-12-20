@@ -1,19 +1,21 @@
 export class Work {
   constructor() {
-    this.projects = document.querySelectorAll(".project");
+    this.projects = document.querySelectorAll('.project');
+
+    this.toggleProjectPanels();
   }
 
   toggleProjectPanels() {
     if (window.innerWidth >= 992) {
-      this.projects[0].classList.add("active");
+      this.projects[0].classList.add('active');
     }
 
     this.projects.forEach((project) => {
-      project.addEventListener("click", () => {
+      project.addEventListener('click', () => {
         this.projects.forEach((proj) => {
-          proj.classList.remove("active");
+          proj.classList.remove('active');
         });
-        project.classList.add("active");
+        project.classList.add('active');
       });
     });
   }

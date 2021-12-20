@@ -11,6 +11,8 @@ export class Contact {
     this.loaderContact = document.getElementById('loader-contact');
     this.successMessage = document.getElementById('success-message');
     this.errorMessage = document.getElementById('error-message');
+
+    this.initForm();
   }
 
   initForm() {

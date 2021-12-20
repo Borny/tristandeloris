@@ -11,6 +11,8 @@ export class Header {
     this.navList = document.getElementById('nav-list');
     this.navItems = this.navList.querySelectorAll('.main-navigation__item');
     this.URL = 'http://localhost:9000/api/feed';
+
+    this.initHeader();
   }
 
   initHeader() {

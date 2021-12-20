@@ -3,6 +3,8 @@ export class About {
     this.capsules = document.querySelectorAll('.capsule');
     this.target = document.getElementById('target');
     this.skills = document.querySelectorAll('.skill');
+
+    this.initAbout();
   }
 
   initAbout() {
