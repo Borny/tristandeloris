@@ -1,38 +1,23 @@
-29269
+29241
 61/home/mat/projects/tristan-deloris-pro/tristandeloris/.vscode1634823372634888600 1
 61/home/mat/projects/tristan-deloris-pro/tristandeloris/.sassrc1634823372634888600 0
-82/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/bx-rooftop.197a74f2.jpg1635166325353266400 0
-75/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/ics.2e6f2e2d.jpg1635166325353266400 0
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-144x144.b35e95c6.png1635166325343266400 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon-32x32.c8743376.png1635166325343266400 0
-82/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/bx-rooftop.b5e6fc31.jpg1635165935863266400 0
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-60x60.04001b41.png1635165935863266400 0
-83/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/lacleduquai.0e83bc72.jpg1635165935863266400 0
-93/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/rail-road-down-center.66332c01.jpg1635165935863266400 0
-77/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.e5abd4f8.css1635168032223266400 0
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-120x120.a3c1bfa6.png1635165935863266400 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/crater-center.7eaf51ff.jpg1635166325353266400 0
-86/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/hourtin-sunset.6753ccc4.jpg1635165935863266400 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon-96x96.1a60fdc4.png1635166321953266400 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/kalalau-beach.79d3a538.jpg1635165935863266400 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon-16x16.e981b7b4.png1635165935863266400 0
-80/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/maunakea.40beb26c.jpg1635166321953266400 0
-79/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon.fd6ae421.ico1635166319443266400 0
-83/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/lacleduquai.786bfb8b.jpg1635166321953266400 0
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-72x72.80fc697a.png1635165935863266400 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon-16x16.faa3433e.png1635166321953266400 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon-32x32.291b5f7b.png1635165935863266400 0
-76/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.1d45bdfd.js1635166321963266400 0
-76/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.46ec448c.js1635166325353266400 0
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-57x57.ae0db9da.png1635166321953266400 0
-79/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/manifest.webmanifest1635165935863266400 0
-77/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.4ba3a86f.css1635167900733266400 0
-92/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/android-icon-192x192.7cc4ba7e.png1635166321953266400 0
-81/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.4ba3a86f.css.map1635167900743266400 0
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-57x57.9c0b31d2.png1635165935863266400 0
-58/home/mat/projects/tristan-deloris-pro/tristandeloris/dist1635168687173266400 1
+77/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.14cfeacf.css1640037423340078900 0
+82/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/bx-rooftop.197a74f2.jpg1640037423340078900 0
+75/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/ics.2e6f2e2d.jpg1640037423340078900 0
+90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-144x144.b35e95c6.png1640037423330078900 0
+85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon-32x32.c8743376.png1640037423340078900 0
+85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/crater-center.7eaf51ff.jpg1640037423340078900 0
+85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon-96x96.1a60fdc4.png1640037423330078900 0
+80/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/maunakea.40beb26c.jpg1640037423340078900 0
+79/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon.fd6ae421.ico1640037423340078900 0
+83/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/lacleduquai.786bfb8b.jpg1640037423340078900 0
+85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon-16x16.faa3433e.png1640037423340078900 0
+88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-57x57.ae0db9da.png1640037423340078900 0
+79/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/manifest.webmanifest1640037423340078900 0
+92/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/android-icon-192x192.7cc4ba7e.png1640037423330078900 0
+58/home/mat/projects/tristan-deloris-pro/tristandeloris/dist1640037617060078900 1
 85/home/mat/projects/tristan-deloris-pro/tristandeloris/configs/lite-server-config.json1635166127663266400 0
-64/home/mat/projects/tristan-deloris-pro/tristandeloris/.gitignore1634823372634888600 0
+64/home/mat/projects/tristan-deloris-pro/tristandeloris/.gitignore1640037397600078900 0
 93/home/mat/projects/tristan-deloris-pro/tristandeloris/src/img/icons/icon/apple-icon-72x72.png1634823372644888600 0
 95/home/mat/projects/tristan-deloris-pro/tristandeloris/src/img/icons/icon/apple-icon-180x180.png1634823372644888600 0
 95/home/mat/projects/tristan-deloris-pro/tristandeloris/src/img/icons/icon/apple-icon-114x114.png1634823372644888600 0
@@ -71,10 +56,10 @@
 76/home/mat/projects/tristan-deloris-pro/tristandeloris/src/pages/offline.html1634830498044888600 0
 73/home/mat/projects/tristan-deloris-pro/tristandeloris/src/pages/feed.html1634830501284888600 0
 63/home/mat/projects/tristan-deloris-pro/tristandeloris/src/pages1634823373074888600 1
-71/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/contact.js1634823373074888600 0
+71/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/contact.js1640036642930078900 0
 71/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/utility.js1634823373074888600 0
-68/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/work.js1634823373074888600 0
-68/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/home.js1635076249435925100 0
+68/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/work.js1640036507630078900 0
+68/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/home.js1640036638230078900 0
 60/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js1634823373074888600 1
 69/home/mat/projects/tristan-deloris-pro/tristandeloris/src/favicon.ico1634823372634888600 0
 86/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/tools/_variables.scss1634832910564888600 0
@@ -82,13 +67,13 @@
 86/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/components/_work.scss1634823373074888600 0
 88/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/components/_footer.scss1634823373074888600 0
 86/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/components/_feed.scss1634823373074888600 0
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/components/_loader.scss1634823373074888600 0
+88/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/components/_loader.scss1640037582180078900 0
 75/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/components1634823373074888600 1
 80/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/base/_base.scss1635167899923266400 0
 69/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/base1634823373074888600 1
 64/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles1634823373074888600 1
 78/home/mat/projects/tristan-deloris-pro/tristandeloris/src/manifest.webmanifest1634831479014888600 0
-57/home/mat/projects/tristan-deloris-pro/tristandeloris/src1634823373074888600 1
+57/home/mat/projects/tristan-deloris-pro/tristandeloris/src1640037262280078900 1
 71/home/mat/projects/tristan-deloris-pro/tristandeloris/package-lock.json1635165959653266400 0
 89/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/resolve-from/readme.md1634827333084888600 0
 88/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/resolve-from/index.js1634827332954888600 0
@@ -1708,7 +1693,6 @@
 128/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/stylehacks/node_modules/postcss-selector-parser/dist/index.js1634827333934888600 0
 131/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/stylehacks/node_modules/postcss-selector-parser/dist/tokenize.js1634827335244888600 0
 129/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/stylehacks/node_modules/postcss-selector-parser/dist/parser.js1634827334194888600 0
-82/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/belaetcome.9ca173cd.jpg1635165935863266400 0
 119/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/stylehacks/node_modules/postcss-selector-parser/dist1634827335244888600 1
 124/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/stylehacks/node_modules/postcss-selector-parser/README.md1634827335704888600 0
 127/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/stylehacks/node_modules/postcss-selector-parser/package.json1634827335514888600 0
@@ -2903,7 +2887,6 @@
 77/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/buffer-xor1634827412484888600 1
 92/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/caller-callsite/readme.md1634827333114888600 0
 91/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/caller-callsite/index.js1634827332954888600 0
-80/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/maunakea.c74a4e77.jpg1635165935863266400 0
 95/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/caller-callsite/package.json1634827332894888600 0
 90/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/caller-callsite/license1634827333044888600 0
 82/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/caller-callsite1634827333044888600 1
@@ -3184,7 +3167,7 @@
 140/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/postcss-discard-comments/dist/lib/commentRemover.js1634827412304888600 0
 122/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/postcss-discard-comments/dist/lib1634827412174888600 1
 126/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/postcss-discard-comments/package.json1634827412784888600 0
-70/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/header.js1635074654655925100 0
+70/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/header.js1640036604030078900 0
 113/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/postcss-discard-comments1634827412894888600 1
 86/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/buffer/package.json1634827412494888600 0
 112/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/stylehacks/CHANGELOG.md1634827415894888600 0
@@ -3331,7 +3314,7 @@
 103/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/source-map/lib1634827414244888600 1
 104/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/source-map/dist1634827418644888600 1
 112/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/source-map/package.json1634827411684888600 0
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-120x120.f5f223a1.png1635166321953266400 0
+90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-120x120.f5f223a1.png1640037423330078900 0
 115/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/source-map/source-map.d.ts1634827415474888600 0
 99/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/source-map1634827415234888600 1
 106/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/cssnano/README.md1634827416064888600 0
@@ -4046,7 +4029,6 @@
 114/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-plugin-transform-es2015-typeof-symbol/lib1634827333914888600 1
 120/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-plugin-transform-es2015-typeof-symbol/README.md1634827333784888600 0
 123/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-plugin-transform-es2015-typeof-symbol/package.json1634827333614888600 0
-76/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.c8a01236.js1635165935863266400 0
 110/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-plugin-transform-es2015-typeof-symbol1634827333784888600 1
 82/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/is-svg/index.js1634827333484888600 0
 86/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/is-svg/package.json1634827333424888600 0
@@ -4638,7 +4620,6 @@
 110/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server.middleware/app.js1635165956203266400 0
 120/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server.middleware/app/css/main.css1635165956223266400 0
 111/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server.middleware/app/css1635165956213266400 1
-77/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.7ebec68f.css1635166327253266400 0
 107/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server.middleware/app1635165956233266400 1
 111/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server.middleware/desc.md1635165956233266400 0
 118/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/jsdom/lib/jsdom/living/events/KeyboardEvent-impl.js1634827421084888600 0
@@ -4688,7 +4669,6 @@
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server/app/css1635165956073266400 1
 96/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server/app1635165956083266400 1
 102/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server/readme.md1635165956093266400 0
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-114x114.793bd668.png1635165935863266400 0
 105/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server/package.json1635165956053266400 0
 99/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/core-js/modules/web.immediate.js1634827338884888600 0
 112/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/core-js/library/fn/string/virtual/fontsize.js1634827338634888600 0
@@ -5519,6 +5499,7 @@
 145/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/internals/get-async-iterator.js1634827428714888600 0
 142/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/internals/object-iterator.js1634827430104888600 0
 143/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/lexer/generic-urange.js1634827421894888600 0
+76/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.71ac7564.js1640037423340078900 0
 102/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/readable-stream/writable-browser.js1634827414774888600 0
 144/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/stable/instance/starts-with.js1634827430724888600 0
 123/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/lib/xast.js1634827422934888600 0
@@ -5716,7 +5697,7 @@
 113/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/server.middleware/readme.md1635165956243266400 0
 137/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/internals/string-pad.js1634827430764888600 0
 113/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/browser-sync/node_modules/connect/package.json1635165953953266400 0
-68/home/mat/projects/tristan-deloris-pro/tristandeloris/src/index.html1635168678773266400 0
+68/home/mat/projects/tristan-deloris-pro/tristandeloris/src/index.html1640037588250078900 0
 85/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/jake/lib/loader.js1634827415754888600 0
 119/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@babel/types/node_modules/to-fast-properties/license1634827412004888600 0
 142/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/features/string/trim-left.js1634827431044888600 0
@@ -6844,7 +6825,7 @@
 94/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/es-abstract/2021/IsArray.js1634827425784888600 0
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/es-abstract/2020/TimeWithinDay.js1634827428834888600 0
 94/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/moment/dist/locale/fr-ca.js1635165956133266400 0
-69/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/about.js1635077844455925100 0
+69/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/about.js1640036627070078900 0
 87/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/camelcase/index.d.ts1635165953953266400 0
 133/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@babel/helper-module-transforms/lib/normalize-and-load-metadata.js1634827412594888600 0
 93/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/har-validator/lib/error.js1634827412054888600 0
@@ -7864,7 +7845,7 @@
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/operators/mergeScan.js1635165957873266400 0
 104/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/operators/combineLatest.js1635165957833266400 0
 98/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operator/bufferWhen.js.map1635165958423266400 0
-93/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/rail-road-down-center.69ec1552.jpg1635166325353266400 0
+93/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/rail-road-down-center.69ec1552.jpg1640037423340078900 0
 99/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/operators/find.js.map1635165957853266400 0
 83/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/css-tree/LICENSE1634827332894888600 0
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/operators/switchAll.js1635165957903266400 0
@@ -7929,7 +7910,7 @@
 96/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/operators/retry.js1635165957883266400 0
 102/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/terser/lib/compress/tighten-body.js1634827422564888600 0
 105/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/operators/windowTime.js.map1635165957923266400 0
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-76x76.4b95eba6.png1635166325343266400 0
+88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-76x76.4b95eba6.png1640037423340078900 0
 88/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@types/node/http.d.ts1634827420134888600 0
 82/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/lmdb-store/test1634827428314888600 1
 90/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/es-abstract/2021/Get.js1634827425054888600 0
@@ -8396,6 +8377,7 @@
 124/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/postcss-merge-longhand/package.json1634827417804888600 0
 99/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/add/operator/delay.js1635165957433266400 0
 94/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rx/dist/rx.core.testing.map1635165956373266400 0
+76/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.b40143c7.js1640037423340078900 0
 107/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/operator/dematerialize.js.map1635165957713266400 0
 115/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/stream-http/node_modules/readable-stream/LICENSE1634827411674888600 0
 125/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/browser-sync-ui/lib/plugins/remote-debug/remote-debug.html1635165955843266400 0
@@ -9370,7 +9352,6 @@
 98/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/add/operator/reduce.js.map1635165958153266400 0
 102/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/css-tree/lib/generator/sourceMap.js1634827337454888600 0
 139/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/features/regexp/search.js1634827430484888600 0
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-152x152.24bc1fa9.png1635165935863266400 0
 85/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/src/operators1635165959083266400 1
 140/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/features/number/epsilon.js1634827425404888600 0
 107/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/operators/skipUntil.js.map1635165957233266400 0
@@ -9708,7 +9689,6 @@
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/operators/concat.js1635165957063266400 0
 102/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/operators/race.js.map1635165957203266400 0
 95/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operator/publish.js.map1635165958523266400 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/crater-center.dd7d6b75.jpg1635165935863266400 0
 93/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/lodash.camelcase/README.md1634827412514888600 0
 134/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/es/regexp/replace.js1634827430424888600 0
 105/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/cssstyle/lib/properties/borderRight.js1634827418354888600 0
@@ -11420,7 +11400,6 @@
 111/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/runtime-js/lib/helpers/bundle-url.js1634827415044888600 0
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/operators/single.js1635165957233266400 0
 77/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/pbkdf2/lib1634827412714888600 1
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-144x144.1f0970ea.png1635165935863266400 0
 116/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/bs-recipes/recipes/gulp.task.sequence/gulpfile.js1635165955823266400 0
 92/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/src/ReplaySubject.ts1635165959093266400 0
 97/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/request/lib/getProxyFromURI.js1634827412474888600 0
@@ -12548,7 +12527,7 @@
 108/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/add/observable/using.js.map1635165955713266400 0
 92/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/ua-parser-js/test/test.js1635165954173266400 0
 88/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/is-typedarray/test.js1634827412054888600 0
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-72x72.b02a113e.png1635166321953266400 0
+88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-72x72.b02a113e.png1640037423340078900 0
 93/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/vm-browserify/CHANGELOG.md1634827413304888600 0
 96/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/operator/repeat.js1635165957773266400 0
 114/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-image/lib/validateConfig.js1634827414874888600 0
@@ -12831,7 +12810,7 @@
 115/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/add/operator/ignoreElements.js.map1635165955983266400 0
 81/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/csso/README.md1634827336594888600 0
 110/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/browser-sync/node_modules/statuses/index.js1635165954053266400 0
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-114x114.3a6d9891.png1635166325343266400 0
+90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-114x114.3a6d9891.png1640037423330078900 0
 98/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/operator/mergeAll.js1635165957753266400 0
 130/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/stylehacks/dist/index.js1634827413514888600 0
 118/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/postcss-selector-parser/dist/selectors/namespace.js1634827418534888600 0
@@ -13446,7 +13425,7 @@
 109/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/core-js/library/modules/es6.array.slice.js1634827338084888600 0
 88/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/colord/plugins/lch.js1634827412834888600 0
 99/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/core-js/library/fn/math/imulh.js1634827338694888600 0
-53/home/mat/projects/tristan-deloris-pro/tristandeloris1635166056853266400 1
+53/home/mat/projects/tristan-deloris-pro/tristandeloris1640037423200078900 1
 94/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/svgo/plugins/removeAttrs.js1634827335954888600 0
 94/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operator/windowTime.js1635165958593266400 0
 92/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/browser-sync/dist/args.js1635165954343266400 0
@@ -14290,7 +14269,7 @@
 130/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/es/string/sup.js1634827430824888600 0
 110/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/testing/ColdObservable.js.map1635165957323266400 0
 97/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@swc/helpers/lib/_construct.js1634827416854888600 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/kalalau-beach.fcbbd189.jpg1635166325353266400 0
+85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/kalalau-beach.fcbbd189.jpg1640037423340078900 0
 98/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/package-manager/LICENSE1634827414364888600 0
 118/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@babel/highlight/node_modules/ansi-styles/readme.md1634827412164888600 0
 125/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-posthtml/node_modules/semver/README.md1634827412994888600 0
@@ -16051,7 +16030,6 @@
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/add/observable/forkJoin.d.ts1635165958013266400 0
 95/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/add/operator/catch.d.ts1635165958053266400 0
 117/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/hash-base/node_modules/readable-stream/readable.js1634827416314888600 0
-75/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/ics.974fb66e.jpg1635165935863266400 0
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/caniuse-lite/data/features/ime.js1634827425924888600 0
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operator/throttleTime.js.map1635165958583266400 0
 99/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/add/observable/range.js.map1635165958033266400 0
@@ -18031,7 +18009,7 @@
 136/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/domutils/lib/manipulation.d.ts1634827415914888600 0
 133/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/postcss-merge-rules/node_modules/postcss-selector-parser/README.md1634827335704888600 0
 155/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-htmlnano/node_modules/css-select/lib/pseudo-selectors/filters.d.ts.map1634827414924888600 0
-69/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.html1635168687163266400 0
+69/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.html1640037617060078900 0
 113/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-js/lib/esmodule-helpers.js1634827413944888600 0
 101/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operators/windowToggle.js.map1635165958783266400 0
 122/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/http-proxy-middleware/dist/handlers/fix-request-body.js1634827412604888600 0
@@ -18636,7 +18614,7 @@
 95/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/util/isPromise.js1635165957973266400 0
 97/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/src/operators/mergeMap.ts1635165959053266400 0
 92/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/src/operators/zip.ts1635165959083266400 0
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-152x152.3c6c56d9.png1635166321953266400 0
+90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-152x152.3c6c56d9.png1640037423330078900 0
 94/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/src/operators/count.ts1635165959033266400 0
 106/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/browser-sync/dist/server/proxy-utils.js1635165954913266400 0
 81/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm5/add1635165957413266400 1
@@ -18833,7 +18811,6 @@
 98/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operator/bufferTime.js.map1635165958423266400 0
 83/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/has/package.json1634827332874888600 0
 95/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operator/observeOn.d.ts1635165958513266400 0
-80/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/index.c8a01236.js.map1635165935873266400 0
 90/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operator/concat.js1635165958433266400 0
 102/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/add/operator/pluck.js1635165956083266400 0
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/highlight.js/lib/languages/nim.js1634827424704888600 0
@@ -19238,7 +19215,6 @@
 143/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-htmlnano/node_modules/dom-serializer/lib/foreignNames.d.ts1634827412794888600 0
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/AsyncSubject.js.map1635165956333266400 0
 105/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/msgpackr-extract/prebuilds/linux-arm641634827424284888600 1
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-180x180.3f4c473c.png1635165935863266400 0
 135/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/stable/array/index.js1634827429364888600 0
 103/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/operator/switch.js.map1635165956963266400 0
 88/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/yaml/browser/index.js1634827413734888600 0
@@ -19331,7 +19307,7 @@
 103/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/operator/sampleTime.js1635165956923266400 0
 109/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/purgecss/node_modules/postcss/package.json1634827418944888600 0
 142/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/features/typed-array/keys.js1634827429804888600 0
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-60x60.4f6a4831.png1635166325343266400 0
+88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-60x60.4f6a4831.png1640037423340078900 0
 115/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-plugin-transform-es2015-literals/README.md1634827333854888600 0
 112/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@babel/core/lib/transformation/plugin-pass.js1634827420094888600 0
 109/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/_esm2015/operator/throttleTime.js.map1635165956983266400 0
@@ -19603,7 +19579,6 @@
 136/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/features/array/sort.js1634827430664888600 0
 91/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operator/isEmpty.js1635165958493266400 0
 117/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/css-tree/node_modules/source-map/lib/quick-sort.js1634827333884888600 0
-92/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/android-icon-192x192.0b4a3b0b.png1635165935863266400 0
 130/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/postcss-svgo/LICENSE-MIT1634827411704888600 0
 133/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/stable/math/cbrt.js1634827423484888600 0
 83/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/lodash/fp/all.js1634827337774888600 0
@@ -20342,7 +20317,7 @@
 148/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/modules/es.typed-array.index-of.js1634827426444888600 0
 116/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/css-tree/lib/lexer/trace.js1634827423644888600 0
 91/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/lodash.memoize/README.md1634827332954888600 0
-82/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/belaetcome.0a3ec591.jpg1635166321953266400 0
+82/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/belaetcome.0a3ec591.jpg1640037423340078900 0
 91/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/engine.io-parser/LICENSE1635165953863266400 0
 151/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/modules/es.reflect.define-property.js1634827425974888600 0
 92/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/miller-rabin/node_modules1634827407534888600 1
@@ -20906,7 +20881,6 @@
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/highlight.js/lib/languages/php.js1634827424944888600 0
 126/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/common1634827423574888600 1
 130/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/postcss-normalize-string1634827412314888600 1
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-76x76.0ce9f3b9.png1635165935863266400 0
 140/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/postcss-normalize-string/README.md1634827412454888600 0
 130/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/lmdb-store/dependencies/lmdb-data-v1/libraries/liblmdb/mtest3.c1634827422854888600 0
 135/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/postcss-normalize-string/dist1634827411874888600 1
@@ -21032,7 +21006,6 @@
 144/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/svgo/plugins/addClassesToSVGElement.js1634827418034888600 0
 101/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rx/ts/core/linq/observable/when.ts1635165956863266400 0
 86/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/moment/locale/bs.js1635165955623266400 0
-85/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon-96x96.30027bf3.png1635165935863266400 0
 90/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/types/unsafe.js1634827414344888600 0
 117/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@swc/helpers/lib/_iterable_to_array_limit_loose.js1634827418504888600 0
 141/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/svgo/plugins/removeEditorsNSData.js1634827420964888600 0
@@ -21476,7 +21449,7 @@
 100/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/core-js/library/fn/promise/try.js1634827338864888600 0
 137/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/hash-base/node_modules/readable-stream/lib/internal/streams/destroy.js1634827413994888600 0
 151/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/postcss-normalize-display-values/package.json1634827412454888600 0
-86/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/hourtin-sunset.cf8cd8bd.jpg1635166321953266400 0
+86/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/hourtin-sunset.cf8cd8bd.jpg1640037423340078900 0
 115/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree1634827423914888600 1
 148/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/postcss-normalize-display-values/README.md1634827412684888600 0
 110/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/caniuse-lite/data/features/token-binding.js1634827428274888600 0
@@ -27425,7 +27398,7 @@
 92/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rxjs/operator/sample.d.ts1635165958543266400 0
 139/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/postcss-modules-local-by-default/node_modules/postcss/lib/stringifier.js1634827421244888600 0
 146/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/postcss-modules-local-by-default/node_modules/postcss/lib/terminal-highlight.js1634827421324888600 0
-68/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/hero.js1634834465104888600 0
+68/home/mat/projects/tristan-deloris-pro/tristandeloris/src/js/hero.js1640037218910078900 0
 112/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/postcss-modules-local-by-default/package.json1634827412744888600 0
 98/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/core/lib/projectPath.js1634827423864888600 0
 107/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/postcss-modules-local-by-default/LICENSE1634827412954888600 0
@@ -27791,7 +27764,7 @@
 103/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-helper-regex/package-lock.json1634827334134888600 0
 81/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/balanced-match1634827333114888600 1
 98/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-helper-regex/package.json1634827333964888600 0
-90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-180x180.dbce1ae6.png1635166325343266400 0
+90/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/apple-icon-180x180.dbce1ae6.png1640037423330078900 0
 98/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-helper-regex/lib/index.js1634827334104888600 0
 96/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-helper-regex/.npmignore1634827334004888600 0
 144/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/transformer-babel/node_modules/core-js/features/instance/ends-with.js1634827425114888600 0
@@ -28893,7 +28866,7 @@
 117/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/babel-plugin-transform-class-properties/.npmignore1634827333864888600 0
 87/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/process/package.json1634827411624888600 0
 82/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/process/LICENSE1634827411934888600 0
-88/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/components/_header.scss1634823373074888600 0
+88/home/mat/projects/tristan-deloris-pro/tristandeloris/src/styles/components/_header.scss1637014654758085300 0
 82/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/process/test.js1634827412494888600 0
 111/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/htmlnano/node_modules/postcss-reduce-initial1634827412894888600 1
 86/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/json-stringify-safe1634827412344888600 1
@@ -29114,7 +29087,6 @@
 142/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/@parcel/optimizer-cssnano/node_modules/postcss-minify-gradients/LICENSE-MIT1634827411704888600 0
 104/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/highlight.js/lib/languages/parser3.js1634827424844888600 0
 110/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/highlight.js/lib/languages/vbscript-html.js1634827425574888600 0
-79/home/mat/projects/tristan-deloris-pro/tristandeloris/dist/favicon.b13f945b.ico1635165935863266400 0
 94/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/rx/ts/core/internal/util.ts1635165956403266400 0
 105/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/highlight.js/lib/languages/routeros.js1634827425194888600 0
 88/home/mat/projects/tristan-deloris-pro/tristandeloris/node_modules/postcss-minify-params1634827332954888600 1
