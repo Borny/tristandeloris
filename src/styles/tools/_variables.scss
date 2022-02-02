@@ -1,7 +1,7 @@
 // @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 // @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 // @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 ///////////
@@ -17,15 +17,23 @@ $dove-gray: #707070;
 
 // $fountain-blue: #5dbeba;
 $fountain-blue: lightblue;
+$chambray: #3c598e;
 
 $school-bus-yellow: #ffde00;
 
 $red: #ff0000;
 
+// VARIABLES
 $primary-color: $fountain-blue;
 $secondary-color: $school-bus-yellow;
+
 $dark-gray: $mineshaft;
+$light-gray: $dove-gray;
+
 $danger: $red;
+
+$primary-blue: $chambray;
+
 //////////
 // FONTS
 //////////
@@ -48,11 +56,12 @@ $font-size-xs: 0.6rem;
 // FONT WEIGHT
 ////////////////
 
-$fontWeightThin: 300;
-$fontWeightBase: 400;
-$fontWeightMedium: 500;
-$fontWeightSemi: 600;
-$fontWeightBold: 700;
+$font-weight-thinest: 200;
+$font-weight-thin: 300;
+$font-weight-base: 400;
+$font-weight-medium: 500;
+$font-weight-semi: 600;
+$font-weight-bold: 700;
 
 /////////////////
 // Z-INDEX

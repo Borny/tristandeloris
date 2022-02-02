@@ -4,7 +4,7 @@
   font-family: $fontMontserrat;
   text-transform: uppercase;
   text-align: center;
-  font-weight: $fontWeightThin;
+  font-weight: $font-weight-thin;
   padding: 2rem 0;
 
   @media (min-width: $screen-sm) {
@@ -12,6 +12,6 @@
   }
 
   span {
-    font-weight: $fontWeightMedium;
+    font-weight: $font-weight-medium;
   }
 }

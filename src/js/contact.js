@@ -93,8 +93,8 @@ export class Contact {
 
     try {
       const res = await fetch(
-        'https://tristan-deloris-pro.herokuapp.com/api/contact',
-        // 'http://localhost:9000/api/contact',
+        // 'https://tristan-deloris-pro.herokuapp.com/api/contact',
+        'http://localhost:9000/api/contact',
         // 'http://localhost:9000/api/contactffff',
         {
           method: 'POST',

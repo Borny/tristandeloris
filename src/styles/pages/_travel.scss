@@ -1,0 +1,206 @@
+.travel {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+
+  &__quotes {
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    @media (min-width: $screen-xs) {
+      padding: 9rem 0 0 12rem;
+    }
+
+    .title {
+      color: $primary-blue;
+      font-family: $fontMontserrat;
+      text-transform: uppercase;
+      font-size: 3rem;
+    }
+
+    .quotes {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      color: $primary-blue;
+      font-weight: $font-weight-thinest;
+      text-transform: uppercase;
+      font-size: 2.3rem;
+    }
+
+    .carousel__container {
+      position: relative;
+      height: 100%;
+      max-width: 1300px;
+      max-height: 230px;
+
+      @media (min-width: $screen-xs) {
+        width: calc(100vw - 24rem);
+      }
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .images__container {
+      height: 100%;
+      transform: translateX(0);
+      display: flex;
+      flex-direction: column;
+      transition: 0.4s ease-in-out;
+      overflow-y: auto;
+
+      @media (min-width: $screen-xs) {
+        flex-direction: row;
+        overflow: initial;
+      }
+    }
+
+    .img__container {
+      position: relative;
+      margin: 0 1rem 1rem 1rem;
+      min-width: 33%;
+      height: 100%;
+
+      @media (min-width: $screen-xs) {
+        margin: 0;
+        padding: 1rem;
+      }
+    }
+
+    .img__content {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      box-shadow: rgb(0 0 0) 0px 3px 6px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease-in;
+
+      @media (min-width: $screen-xs) {
+        &:hover {
+          box-shadow: rgb(0 0 0) 0px 6px 8px;
+          + .img__label {
+            bottom: 1rem;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .img__label {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 40px;
+      right: 0;
+      bottom: 0;
+      padding: 0 0 0 1rem;
+      left: 0;
+      right: 0;
+      color: $white;
+      text-transform: uppercase;
+      font-family: $fontMontserrat;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      );
+      transition: bottom 0.2s ease-in-out, opacity 0.5s ease-in-out;
+
+      @media (min-width: $screen-xs) {
+        opacity: 0;
+        left: 1rem;
+        width: calc(100% - 2rem);
+        bottom: -100%;
+      }
+    }
+
+    // CAROUSEL BTNS
+    .btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      font-size: 1.1rem;
+      z-index: 10;
+      border: none;
+      cursor: pointer;
+      box-shadow: rgb(0 0 0) 0px 3px 6px;
+      color: $light-gray;
+      transition: opacity 0.3s ease-in;
+      display: none;
+
+      @media (min-width: $screen-xs) {
+        display: block;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:active {
+        transform: translateY(-50%) scale(0.9);
+      }
+
+      &:hover {
+        font-size: 1.3rem;
+        transition: 0.1s ease-in;
+        &:disabled {
+          font-size: 1.1rem;
+        }
+      }
+
+      &:disabled {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+
+    .btn--left {
+      left: -20px;
+    }
+
+    .btn--right {
+      right: -10px;
+    }
+  }
+
+  &__illustration {
+    position: absolute;
+    flex: 1;
+    background: url('../img/pics/palmtree_brasil.jpg');
+    height: 100%;
+    width: 40%;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+    &:after {
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(to right, $white 0%, rgba(0, 0, 0, 0) 40%);
+      z-index: 0;
+    }
+  }
+}
