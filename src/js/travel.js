@@ -1,5 +1,7 @@
 export class Travel {
   constructor() {
+    this.travel = document.getElementById('travel');
+    this.loader = document.getElementById('loader');
     this.carousel = document.getElementById('carousel');
     this.imgContainer = document.getElementById('images-container');
     this.imgs = document.querySelectorAll('.img__container');
@@ -25,6 +27,11 @@ export class Travel {
 
   initTravel() {
     window.addEventListener('load', () => {
+      // setTimeout(() => {
+      this.loader.classList.add('hidden');
+      // }, 2000);
+      this.travel.classList.remove('hidden');
+
       // TODO: get the albums from the backend : one array with the snapshots then on opening the modal the album selected
       if (this.index === 3) {
         this.btnLeft.setAttribute('disabled', true);
@@ -51,6 +58,7 @@ export class Travel {
   }
 
   onPrevious() {
+    console.log('on previous');
     this.btnLeft.addEventListener('click', () => {
       this.index--;
       this.updateBtns();
@@ -69,15 +77,15 @@ export class Travel {
   }
 
   onNext() {
+    console.log('on next');
     this.btnRight.addEventListener('click', () => {
+      this.imgContainer.style.transform = `translateX(${
+        this.carouselTransform - this.carouselWidth / 3
+      }px)`;
       this.index++;
       this.updateBtns();
 
       // console.log(this.carouselTransform - this.carouselWidth / 3);
-
-      this.imgContainer.style.transform = `translateX(${
-        this.carouselTransform - this.carouselWidth / 3
-      }px)`;
 
       console.log(this.imgContainer.style.transform);
 

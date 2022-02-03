@@ -70,7 +70,14 @@
   </head>
 
   <body>
-    <main class="travel">
+    <div id="loader" class="loader__container">
+      <div class="loader">
+        <i class="fas fa-globe-americas"></i>
+        <!-- <i class="fas fa-globe-africa"></i> -->
+      </div>
+    </div>
+
+    <main id="travel" class="hidden travel">
       <div class="travel__quotes">
         <h1 class="title">Travel</h1>
         <h2 class="quotes">
@@ -130,13 +137,7 @@
       </div>
 
       <!-- FOOTER -->
-      <footer class="footer footer--transparent">
-        <p class="footer__content">
-          <small>
-            Tristan Deloris - Fullstack Javascript Developer - 2022
-          </small>
-        </p>
-      </footer>
+      <include src="./src/components/footer.html"></include>
 
       <!-- PALM TREE ILLUSTRATION -->
       <div class="travel__illustration"></div>
