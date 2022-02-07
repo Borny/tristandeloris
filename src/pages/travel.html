@@ -65,7 +65,6 @@
       href="../img/icons/icon/apple-icon-180x180.png"
       sizes="180x180"
     />
-    <!-- <script type="module" src="./main.js" defer></script> -->
     <script type="module" src="../js/travel.js" defer></script>
   </head>
 
@@ -73,9 +72,14 @@
     <div id="loader" class="loader__container">
       <div class="loader">
         <i class="fas fa-globe-americas"></i>
-        <!-- <i class="fas fa-globe-africa"></i> -->
       </div>
     </div>
+
+    <!-- HEADER -->
+    <include src="./src/components/header.html">
+      { "travelPageLink":"./travel.html" , "isDisplayed":"hidden",
+      "homeHidden":""}
+    </include>
 
     <main id="travel" class="hidden travel">
       <div class="travel__quotes">
@@ -137,7 +141,9 @@
       </div>
 
       <!-- FOOTER -->
-      <include src="./src/components/footer.html"></include>
+      <include src="./src/components/footer.html">
+        { "footerColor": "footer--transparent" }
+      </include>
 
       <!-- PALM TREE ILLUSTRATION -->
       <div class="travel__illustration"></div>

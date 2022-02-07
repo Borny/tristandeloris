@@ -140,12 +140,12 @@
       this[globalName] = mainExports;
     }
   }
-})({"fSbD7":[function(require,module,exports) {
+})({"k6XcU":[function(require,module,exports) {
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "4a236f9275d0a351";
-module.bundle.HMR_BUNDLE_ID = "6d5e001cc8a01236";
+module.bundle.HMR_BUNDLE_ID = "865e9be6c8d47f7f";
 "use strict";
 function _createForOfIteratorHelper(o, allowArrayLike) {
     var it;
@@ -458,27 +458,13 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"bzG5g":[function(require,module,exports) {
-var _header = require("./header");
-var _hero = require("./hero");
-var _work = require("./work");
-var _about = require("./about");
-var _contact = require("./contact");
-// HEADER
-new _header.Header();
-new _hero.Hero();
-new _work.Work();
-new _about.About();
-new _contact.Contact();
-
-},{"./header":"88COx","./hero":"2DL8N","./work":"bVkXw","./about":"86Lj1","./contact":"7LsZ5"}],"88COx":[function(require,module,exports) {
+},{}],"88COx":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Header", ()=>Header
 );
 class Header {
     constructor(){
-        this.header = document.getElementById('header');
         this.headerTitleBtn = document.getElementById('header-title');
         this.headerTitleArrow = document.getElementsByClassName('header__title__arrow')[0];
         this.headerSocial = document.getElementById('header-social');
@@ -491,9 +477,6 @@ class Header {
         this.initHeader();
     }
     initHeader() {
-        window.addEventListener('load', ()=>{
-            this.header.classList.remove('hidden');
-        });
         this.headerTitleBtn.addEventListener('click', ()=>{
             this.toggleHeaderTitle();
         });
@@ -526,6 +509,7 @@ class Header {
         this.headerSocial.classList.remove('active');
     }
 }
+new Header();
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"ciiiV":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -557,273 +541,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"2DL8N":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Hero", ()=>Hero
-);
-class Hero {
-    constructor(){
-        this.heroSection = document.querySelector('.hero');
-        this.imgsMobile = document.querySelectorAll('.hero__bg-img--mobile');
-        this.imgsDesktop = document.querySelectorAll('.hero__bg-img--desktop');
-        // this.hideableElements = document.querySelectorAll(".hideable")
-        // this.toggleTextBtn = document.getElementById("text-action")
-        this.imgTransition = 5000;
-        this.initHero();
-    }
-    initHero() {
-        let idx = 0;
-        let imgs = this.imgsMobile;
-        if (window.innerWidth >= 992) imgs = this.imgsDesktop;
-        setInterval(()=>{
-            imgs.forEach((img)=>img.classList.remove('active')
-            );
-            idx++;
-            if (idx > imgs.length - 1) idx = 0;
-            imgs[idx].classList.add('active');
-        }, this.imgTransition);
-    }
-}
+},{}]},["k6XcU","88COx"], "88COx", "parcelRequire3cd7")
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"bVkXw":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Work", ()=>Work
-);
-class Work {
-    constructor(){
-        this.projects = document.querySelectorAll('.project');
-        this.toggleProjectPanels();
-    }
-    toggleProjectPanels() {
-        if (window.innerWidth >= 992) this.projects[0].classList.add('active');
-        this.projects.forEach((project)=>{
-            project.addEventListener('click', ()=>{
-                this.projects.forEach((proj)=>{
-                    proj.classList.remove('active');
-                });
-                project.classList.add('active');
-            });
-        });
-    }
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"86Lj1":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "About", ()=>About
-);
-class About {
-    constructor(){
-        this.capsules = document.querySelectorAll('.capsule');
-        this.target = document.getElementById('target');
-        this.skills = document.querySelectorAll('.skill');
-        this.initAbout();
-    }
-    initAbout() {
-        window.addEventListener('load', ()=>{
-            this.toggleExpandCapsules();
-            this.animateSkills();
-        });
-    }
-    animateSkills() {
-        const triggerBottom = window.innerHeight / 3 * 2;
-        this.skills.forEach((skill, index)=>{
-            const svgContainer = skill.querySelector('.svg-container');
-            let svgLine, path, capsule, dot;
-            if (window.innerWidth <= 768) {
-                // Defining the elements of each skills
-                svgLine = skill.querySelector('.svg-line--mobile');
-                path = svgLine.querySelector('.path');
-                capsule = skill.querySelector('.capsule'); // button
-                dot = skill.querySelector('.dot');
-                const capsuleHeight = capsule.clientHeight;
-                const svgLineWidth = svgLine.clientWidth;
-                const svgLineHeight = svgLine.clientHeight;
-                const dotY = dot.offsetTop + dot.clientHeight / 2;
-                const dotX = dot.offsetLeft + dot.clientWidth / 2;
-                svgContainer.style.width = `${svgLineWidth}px`;
-                svgContainer.style.height = `${svgLineHeight}px`;
-                if (index === 0) {
-                    svgContainer.style.top = `${dotY - svgLineHeight}px`;
-                    svgContainer.style.left = `${dotX}px`;
-                    capsule.style.top = `-${capsuleHeight}px`;
-                    capsule.style.right = `-${capsuleHeight / 2}px`;
-                } else if (index === 1) {
-                    svgContainer.style.top = `${dotY}px`;
-                    svgContainer.style.left = `${dotX}px`;
-                    capsule.style.top = `${svgLineHeight}px`;
-                    capsule.style.right = `-${capsuleHeight / 2}px`;
-                } else if (index === 2) {
-                    svgContainer.style.top = `${dotY - svgLineHeight}px`;
-                    svgContainer.style.left = `-${svgLineWidth - dotX}px`;
-                    capsule.style.top = `-${capsuleHeight}px`;
-                    capsule.style.left = `-${capsuleHeight / 2}px`;
-                } else if (index === 3) {
-                    svgContainer.style.top = `${dotY}px`;
-                    svgContainer.style.left = `-${svgLineWidth - dotX}px`;
-                    capsule.style.bottom = `-${capsuleHeight}px`;
-                    capsule.style.left = `-${capsuleHeight / 2}px`;
-                }
-            } else {
-                svgLine = skill.querySelector('.svg-line--desktop');
-                path = svgLine.querySelector('.path');
-                capsule = skill.querySelector('.capsule');
-                dot = skill.querySelector('.dot');
-                const capsuleHeight = capsule.clientHeight;
-                const svgLineWidth = svgLine.clientWidth;
-                const svgLineHeight = svgLine.clientHeight;
-                const dotY = dot.offsetTop + dot.clientHeight / 2;
-                const dotX = dot.offsetLeft + dot.clientWidth / 2;
-                svgContainer.style.width = `${svgLineWidth}px`;
-                svgContainer.style.height = `${svgLineHeight}px`;
-                if (index === 0 || index === 1) {
-                    svgContainer.style.top = `${dotY - svgLineHeight}px`;
-                    svgContainer.style.left = `${dotX - svgLineWidth}px`;
-                    capsule.style.top = `-${capsuleHeight / 2}px`;
-                    capsule.style.right = `${svgLineWidth}px`;
-                } else if (index === 2) {
-                    svgContainer.style.top = `${dotY - svgLineHeight}px`;
-                    svgContainer.style.left = `${dotX}px`;
-                    capsule.style.top = `-${capsuleHeight / 2}px`;
-                    capsule.style.left = `${svgLineWidth}px`;
-                } else if (index === 3) {
-                    svgContainer.style.top = `${dotY}px`;
-                    svgContainer.style.left = `${dotX}px`;
-                    capsule.style.bottom = `-${capsuleHeight / 2}px`;
-                    capsule.style.left = `${svgLineWidth}px`;
-                }
-            }
-            path.style.strokeDasharray = `${path.getTotalLength()}px`;
-            // DISPLAYING THE CAPSULES
-            window.addEventListener('scroll', (e)=>{
-                const targetTop = this.target.getBoundingClientRect().top;
-                if (targetTop < triggerBottom) {
-                    capsule.classList.add('show');
-                    path.classList.add('show');
-                } else {
-                    capsule.classList.remove('show');
-                    path.classList.remove('show');
-                    capsule.classList.remove('expand');
-                }
-            });
-        });
-    }
-    toggleExpandCapsules() {
-        this.capsules.forEach((capsule)=>{
-            const btn = capsule.querySelector('.btn-arrow');
-            btn.addEventListener('click', ()=>{
-                capsule.classList.toggle('expand');
-            });
-        });
-    }
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"7LsZ5":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Contact", ()=>Contact
-);
-class Contact {
-    constructor(){
-        this.labels = document.querySelectorAll('.form-control label');
-        this.form = document.getElementById('contact-form');
-        this.inputFields = document.querySelectorAll('.control');
-        this.name = document.getElementById('form-name');
-        this.subject = document.getElementById('form-subject');
-        this.mail = document.getElementById('form-email');
-        this.message = document.getElementById('form-message');
-        this.submitContactBtn = document.getElementById('submit-contact-btn');
-        this.loaderContact = document.getElementById('loader-contact');
-        this.successMessage = document.getElementById('success-message');
-        this.errorMessage = document.getElementById('error-message');
-        this.initForm();
-    }
-    initForm() {
-        this.clearInputs();
-        this.animateLabel();
-        // Goes through the array inputFields
-        this.inputFields.forEach((input)=>{
-            // Creates an event listener on the current input_field
-            input.addEventListener('input', this.focusOnInput.bind(this));
-        });
-        this.onSubmitForm();
-    }
-    isFormValid() {
-        return this.name.validity.valid && this.mail.validity.valid && this.subject.validity.valid && this.message.validity.valid;
-    }
-    // Clears the inputs
-    clearInputs() {
-        this.inputFields.forEach((input)=>{
-            input.value = '';
-        });
-    }
-    focusOnInput(input) {
-        this.isFormValid() ? this.submitContactBtn.removeAttribute('disabled') : this.submitContactBtn.setAttribute('disabled', 'disabled');
-        if (input && input.target.value !== '') {
-            input.target.classList.add('filled');
-            input.target.parentNode.lastElementChild.classList.add('invisible');
-        } else {
-            input.target.classList.remove('filled');
-            input.target.parentNode.lastElementChild.classList.remove('invisible');
-        }
-    }
-    // Animate the labels on focus
-    animateLabel() {
-        this.labels.forEach((label)=>{
-            label.innerHTML = label.innerText.split('').map((letter, idx)=>`<span style="transition-delay:${idx * 50}ms">${letter}</span>`
-            ).join('');
-        });
-    }
-    onSubmitForm() {
-        this.submitContactBtn.addEventListener('click', ()=>this.submitForm()
-        );
-    }
-    async submitForm() {
-        if (!this.isFormValid) return;
-        const formData = {
-            name: this.name.value.trim(),
-            email: this.mail.value.trim(),
-            subject: this.subject.value,
-            message: this.message.value
-        };
-        // Show loader
-        this.loaderContact.classList.remove('hidden');
-        this.form.classList.add('loading');
-        this.errorMessage.classList.add('hidden');
-        try {
-            const res = await fetch(// 'https://tristan-deloris-pro.herokuapp.com/api/contact',
-            'http://localhost:9000/api/contact', // 'http://localhost:9000/api/contactffff',
-            {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            });
-            if (res.status === 201) {
-                this.loaderContact.classList.add('hidden');
-                this.form.classList.add('hidden');
-                this.successMessage.classList.remove('hidden');
-            } else {
-                console.log('error:', res.status, res);
-                this.form.classList.remove('loading');
-                this.loaderContact.classList.add('hidden');
-                this.errorMessage.classList.remove('hidden');
-                throw new Error('Something went wrong');
-            }
-        } catch (error) {
-            // console.log('contact error:', error);
-            //   this.form.classList.remove("hidden");
-            this.form.classList.remove('loading');
-            this.errorMessage.classList.remove('hidden');
-            this.loaderContact.classList.add('hidden');
-            throw new Error('Something went wrong');
-        }
-    }
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}]},["fSbD7","bzG5g"], "bzG5g", "parcelRequire3cd7")
-
-//# sourceMappingURL=index.c8a01236.js.map
+//# sourceMappingURL=travel.c8d47f7f.js.map

@@ -54,6 +54,14 @@
     margin-top: 0;
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes dash {
   0% {
     stroke-dashoffset: 125;
@@ -470,6 +478,7 @@ a {
   text-decoration: none;
   border: none;
   outline: none;
+  color: inherit;
 }
 li {
   list-style: none;
@@ -543,6 +552,22 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+.compass {
+  position: fixed;
+  top: -40px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  animation: spin 60s infinite linear;
+}
+@media (min-width: 768px) {
+  .compass {
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+  }
+}
 .header {
   position: fixed;
   top: 0;
@@ -552,6 +577,7 @@ select:-webkit-autofill:focus {
   z-index: 50;
   display: flex;
   padding: 1rem;
+  animation: fadeIn 2s 1 linear;
 }
 .header__title__container {
   flex: 1;
@@ -702,7 +728,7 @@ select:-webkit-autofill:focus {
   margin-right: 0.5rem;
 }
 .main-navigation__item:hover .link {
-  color: lightblue;
+  color: #3c598e;
   margin-right: 0.5rem;
 }
 .open-btn {
@@ -1236,7 +1262,12 @@ select:-webkit-autofill:focus {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 0.4s ease-in 0s;
+  transition: 0.4s ease-in;
+}
+.about .skill .capsule:hover.show {
+  border: 1px solid #3c598e;
+  background: rgba(60, 89, 142, 0.3);
+  transition: 0.4s ease-in;
 }
 .about .skill .capsule.show {
   opacity: 1;
@@ -1808,7 +1839,7 @@ select:-webkit-autofill:focus {
   justify-content: center;
   align-items: center;
   font-size: 6rem;
-  color: turquoise;
+  color: #3c598e;
   animation: spin 2s infinite linear;
 }
 .travel {
@@ -1817,6 +1848,7 @@ select:-webkit-autofill:focus {
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  animation: fadeIn 2s 1 linear;
 }
 .travel__quotes {
   z-index: 1;
@@ -1831,10 +1863,16 @@ select:-webkit-autofill:focus {
   }
 }
 .travel__quotes .title {
+  padding: 2rem 0 0;
   color: #3c598e;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 3rem;
+}
+@media (min-width: 768px) {
+  .travel__quotes .title {
+    padding: 0;
+  }
 }
 .travel__quotes .quotes {
   display: flex;

@@ -1,6 +1,22 @@
 $zindex--header-title-container: 10;
 $zindex--main-navigation: 15;
 
+.compass {
+  position: fixed;
+  top: -40px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  @include animation(spin, $duration: 60s);
+
+  @include screen-sm {
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -10,6 +26,7 @@ $zindex--main-navigation: 15;
   z-index: $zindex--header;
   display: flex;
   padding: 1rem;
+  @include animation(fadeIn, $duration: 2s, $iteration-count: 1);
 }
 
 // TITLE
@@ -209,7 +226,7 @@ $zindex--main-navigation: 15;
     }
     &:hover {
       .link {
-        color: $primary-color;
+        color: $primary-blue;
         margin-right: 0.5rem;
       }
     }

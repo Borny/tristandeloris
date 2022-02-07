@@ -86,13 +86,20 @@
       justify-content: center;
       align-items: center;
       opacity: 0;
-      transition: 0.4s ease-in 0s;
+      transition: 0.4s ease-in;
+
+      &:hover {
+        &.show {
+          border: 1px solid $primary-blue;
+          background: rgba($color: $primary-blue, $alpha: 0.3);
+          transition: 0.4s ease-in;
+        }
+      }
 
       // Added through JS
       &.show {
         opacity: 1;
         transition: opacity 0.4s ease-in 1s;
-        // .content,
         .btn-arrow {
           cursor: pointer;
         }

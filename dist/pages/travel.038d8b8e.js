@@ -459,11 +459,103 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"hDijc":[function(require,module,exports) {
+var _header = require("./header");
+var _carousel = require("./carousel");
+new _header.Header();
+new _carousel.Carousel();
+
+},{"./header":"88COx","./carousel":"5Gu46"}],"88COx":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Travel", ()=>Travel
+parcelHelpers.export(exports, "Header", ()=>Header
 );
-class Travel {
+class Header {
+    constructor(){
+        this.header = document.getElementById('header');
+        this.headerTitleBtn = document.getElementById('header-title');
+        this.headerTitleArrow = document.getElementsByClassName('header__title__arrow')[0];
+        this.headerSocial = document.getElementById('header-social');
+        this.headerTitleBackdrop = document.getElementById('header-title-backdrop');
+        this.headerNavBackdrop = document.getElementById('header-nav-backdrop');
+        this.navBtn = document.getElementById('nav-btn');
+        this.navList = document.getElementById('nav-list');
+        this.navItems = this.navList.querySelectorAll('.main-navigation__item');
+        this.URL = 'http://localhost:9000/api/feed';
+        this.initHeader();
+    }
+    initHeader() {
+        window.addEventListener('load', ()=>{
+            this.header.classList.remove('hidden');
+        });
+        this.headerTitleBtn.addEventListener('click', ()=>{
+            this.toggleHeaderTitle();
+        });
+        this.headerTitleBackdrop.addEventListener('click', ()=>{
+            this.toggleHeaderTitle();
+        });
+        this.headerNavBackdrop.addEventListener('click', ()=>{
+            this.toggleNav();
+        });
+        this.navBtn.addEventListener('click', ()=>{
+            this.toggleNav();
+        });
+        this.navItems.forEach((item)=>item.addEventListener('click', ()=>this.toggleNav()
+            )
+        );
+    }
+    toggleHeaderTitle() {
+        this.headerSocial.classList.toggle('active');
+        this.headerSocial.classList.contains('active') ? this.headerSocial.classList.remove('iddle') : this.headerSocial.classList.add('iddle');
+        this.headerTitleBtn.classList.toggle('active');
+        this.headerTitleBackdrop.classList.toggle('active');
+    }
+    toggleNav() {
+        this.navBtn.classList.toggle('open');
+        this.navList.classList.toggle('active');
+        this.headerNavBackdrop.classList.contains('active') ? this.headerNavBackdrop.classList.remove('active') : this.headerNavBackdrop.classList.add('active');
+        // Close the header title if open
+        this.headerTitleBtn.classList.remove('active');
+        this.headerTitleBackdrop.classList.remove('active');
+        this.headerSocial.classList.remove('active');
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"ciiiV":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"5Gu46":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Carousel", ()=>Carousel
+);
+class Carousel {
     constructor(){
         this.travel = document.getElementById('travel');
         this.loader = document.getElementById('loader');
@@ -486,9 +578,7 @@ class Travel {
     }
     initTravel() {
         window.addEventListener('load', ()=>{
-            // setTimeout(() => {
             this.loader.classList.add('hidden');
-            // }, 2000);
             this.travel.classList.remove('hidden');
             // TODO: get the albums from the backend : one array with the snapshots then on opening the modal the album selected
             if (this.index === 3) this.btnLeft.setAttribute('disabled', true);
@@ -536,38 +626,7 @@ class Travel {
         });
     }
 }
-new Travel();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"ciiiV":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["fjJ7T","hDijc"], "hDijc", "parcelRequire3cd7")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}]},["fjJ7T","hDijc"], "hDijc", "parcelRequire3cd7")
 
 //# sourceMappingURL=travel.038d8b8e.js.map
