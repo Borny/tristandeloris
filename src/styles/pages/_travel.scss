@@ -1,9 +1,30 @@
+.loader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .loader {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    color: $primary-blue;
+    @include animation(spin);
+  }
+}
+
 .travel {
   position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: $white;
+
+  @include animation(fadeIn, $duration: 2s, $iteration-count: 1);
 
   &__quotes {
     z-index: 1;
@@ -17,10 +38,15 @@
     }
 
     .title {
+      padding: 2rem 0 0;
       color: $primary-blue;
       font-family: $fontMontserrat;
       text-transform: uppercase;
       font-size: 3rem;
+
+      @include screen-sm {
+        padding: 0;
+      }
     }
 
     .quotes {
@@ -31,6 +57,12 @@
       font-weight: $font-weight-thinest;
       text-transform: uppercase;
       font-size: 2.3rem;
+      @include animation(
+        detailIn,
+        $iteration-count: 1,
+        $duration: 0.6s,
+        $timing-function: ease-out
+      );
     }
 
     .carousel__container {

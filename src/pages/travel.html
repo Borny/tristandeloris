@@ -65,12 +65,23 @@
       href="../img/icons/icon/apple-icon-180x180.png"
       sizes="180x180"
     />
-    <!-- <script type="module" src="./main.js" defer></script> -->
     <script type="module" src="../js/travel.js" defer></script>
   </head>
 
   <body>
-    <main class="travel">
+    <div id="loader" class="loader__container">
+      <div class="loader">
+        <i class="fas fa-globe-americas"></i>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <include src="./src/components/header.html">
+      { "travelPageLink":"./travel.html" , "isDisplayed":"hidden",
+      "homeHidden":""}
+    </include>
+
+    <main id="travel" class="hidden travel">
       <div class="travel__quotes">
         <h1 class="title">Travel</h1>
         <h2 class="quotes">
@@ -130,13 +141,9 @@
       </div>
 
       <!-- FOOTER -->
-      <footer class="footer footer--transparent">
-        <p class="footer__content">
-          <small>
-            Tristan Deloris - Fullstack Javascript Developer - 2022
-          </small>
-        </p>
-      </footer>
+      <include src="./src/components/footer.html">
+        { "footerColor": "footer--transparent" }
+      </include>
 
       <!-- PALM TREE ILLUSTRATION -->
       <div class="travel__illustration"></div>

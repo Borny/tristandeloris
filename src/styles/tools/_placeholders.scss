@@ -7,9 +7,11 @@
   font-weight: $font-weight-thin;
   padding: 2rem 0;
 
-  @media (min-width: $screen-sm) {
+  // @media (min-width: $screen-sm) {
+  @include screen-sm {
     font-size: 4rem;
   }
+  // }
 
   span {
     font-weight: $font-weight-medium;

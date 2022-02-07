@@ -1,6 +1,22 @@
 $zindex--header-title-container: 10;
 $zindex--main-navigation: 15;
 
+.compass {
+  position: fixed;
+  top: -40px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  @include animation(spin, $duration: 60s);
+
+  @include screen-sm {
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -10,6 +26,7 @@ $zindex--main-navigation: 15;
   z-index: $zindex--header;
   display: flex;
   padding: 1rem;
+  @include animation(fadeIn, $duration: 2s, $iteration-count: 1);
 }
 
 // TITLE
@@ -62,19 +79,7 @@ $zindex--main-navigation: 15;
   &__arrow {
     margin: 0 0 0 0.3rem;
     transition: text-shadow 0.2s ease-out, color 0.2s ease-out;
-    animation: swing 2s linear infinite;
-
-    @keyframes swing {
-      0% {
-        transform: translateX(-2px);
-      }
-      50% {
-        transform: translateX(2px);
-      }
-      100% {
-        transform: translateX(-2px);
-      }
-    }
+    @include animation(swing);
   }
 
   @media (min-width: $screen-md) {
@@ -122,40 +127,23 @@ $zindex--main-navigation: 15;
   transform: scale(0);
 
   &.iddle {
-    animation: socialBlockAnimationOut 0.6s ease-in;
+    @include animation(
+      socialBlockAnimationOut,
+      $duration: 0.6s,
+      $iteration-count: 1,
+      $timing-function: ease-in
+    );
   }
 
   &.active {
     opacity: 1;
-    animation: socialBlockAnimationIn 0.6s ease-in;
     transform: scale(1);
-  }
-
-  @keyframes socialBlockAnimationIn {
-    0% {
-      transform: scale(0);
-    }
-    70% {
-      transform: scale(1.15);
-    }
-    85% {
-      transform: scale(0.95);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  @keyframes socialBlockAnimationOut {
-    0% {
-      transform: scale(1);
-    }
-    30% {
-      transform: scale(1.15);
-    }
-    100% {
-      transform: scale(0);
-    }
+    @include animation(
+      socialBlockAnimationIn,
+      $duration: 0.6s,
+      $iteration-count: 1,
+      $timing-function: ease-in
+    );
   }
 }
 
@@ -238,7 +226,7 @@ $zindex--main-navigation: 15;
     }
     &:hover {
       .link {
-        color: $primary-color;
+        color: $primary-blue;
         margin-right: 0.5rem;
       }
     }

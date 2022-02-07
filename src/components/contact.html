@@ -1,0 +1,63 @@
+<section class="contact" id="contact">
+  <div class="section-title">Contact <span>Me</span></div>
+  <div class="section-main">
+    <div class="form-wrapper">
+      <div id="loader-contact" class="loader-contact hidden">
+        <svg class="circular-loader" viewBox="0 0 50 50" style="width: 100px">
+          <circle
+            class="loader-path"
+            id="loader-path"
+            cx="25"
+            cy="25"
+            r="20"
+            fill="none"
+            stroke="#3c598e"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+
+      <form class="form" id="contact-form">
+        <div class="form-control">
+          <input class="input control" id="form-name" type="text" required />
+          <label>Name</label>
+          <p class="error invisible">Please enter a name</p>
+        </div>
+        <div class="form-control">
+          <input class="input control" id="form-subject" type="text" required />
+          <label>Subject</label>
+          <p class="error invisible">Please enter a subject</p>
+        </div>
+        <div class="form-control">
+          <input class="input control" id="form-email" type="email" required />
+          <label>Email</label>
+          <p class="error invisible">Please enter a valid email</p>
+        </div>
+        <div class="form-control">
+          <textarea
+            class="textarea control"
+            id="form-message"
+            minlength="10"
+            required
+          ></textarea>
+          <label>Message</label>
+          <p class="error invisible">Please enter a message</p>
+        </div>
+
+        <button type="button" class="btn" id="submit-contact-btn" disabled>
+          Get in touch!
+        </button>
+      </form>
+
+      <!-- CONTACT FORM  MESSAGES-->
+      <!-- SUCCESS -->
+      <p class="message success hidden" id="success-message">
+        Votre message a bien été envoyé, merci!
+      </p>
+      <!-- ERROR -->
+      <p class="message error hidden" id="error-message">
+        Une erreur s'est produite, veuillez réessayer.
+      </p>
+    </div>
+  </div>
+</section>

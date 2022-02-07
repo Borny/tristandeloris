@@ -1,5 +1,6 @@
 export class Header {
   constructor() {
+    this.header = document.getElementById('header');
     this.headerTitleBtn = document.getElementById('header-title');
     this.headerTitleArrow = document.getElementsByClassName(
       'header__title__arrow'
@@ -16,6 +17,10 @@ export class Header {
   }
 
   initHeader() {
+    window.addEventListener('load', () => {
+      this.header.classList.remove('hidden');
+    });
+
     this.headerTitleBtn.addEventListener('click', () => {
       this.toggleHeaderTitle();
     });
