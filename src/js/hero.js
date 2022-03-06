@@ -4,7 +4,7 @@ export class Hero {
     this.imgsMobile = document.querySelectorAll('.hero__bg-img--mobile');
     this.imgsDesktop = document.querySelectorAll('.hero__bg-img--desktop');
     // this.hideableElements = document.querySelectorAll(".hideable")
-    // this.toggleTextBtn = document.getElementById("text-action")
+    this.toggleTextBtn = document.getElementById('text-action');
     this.imgTransition = 5000;
 
     this.initHero();
@@ -27,10 +27,12 @@ export class Hero {
     }, this.imgTransition);
   }
 
-  // toggleText() {
-  //   this.toggleTextBtn.addEventListener('click', () => {
-  //     this.toggleTextBtn.classList.toggle('masked')
-  //     this.hideableElements.forEach(element => element.classList.toggle('hide'))
-  //   })
-  // }
+  toggleText() {
+    this.toggleTextBtn.addEventListener('click', () => {
+      this.toggleTextBtn.classList.toggle('masked');
+      this.hideableElements.forEach((element) =>
+        element.classList.toggle('hide')
+      );
+    });
+  }
 }

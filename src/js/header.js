@@ -1,5 +1,6 @@
 export class Header {
   constructor() {
+    this.body = document.getElementById('body');
     this.header = document.getElementById('header');
     this.headerTitleBtn = document.getElementById('header-title');
     this.headerTitleArrow = document.getElementsByClassName(
@@ -52,6 +53,7 @@ export class Header {
   }
 
   toggleNav() {
+    this.body.classList.toggle('overflow--hidden');
     this.navBtn.classList.toggle('open');
     this.navList.classList.toggle('active');
     this.headerNavBackdrop.classList.contains('active')

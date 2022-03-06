@@ -67,6 +67,7 @@
   &--content {
     display: flex;
     align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     flex-flow: column;
     color: $white;
@@ -123,18 +124,18 @@
 // }
 
 // TOGGLE TEXT OPACITY BUTTON
-// .text-action {
-//   align-self: flex-end;
-//   color: $white;
-//   padding: 1rem;
-//   z-index: 6;
-//   background: transparent;
-//   cursor: pointer;
+.text-action {
+  align-self: flex-end;
+  color: $white;
+  padding: 1rem;
+  z-index: 6;
+  background: transparent;
+  cursor: pointer;
 
-//   &.masked {
-//     opacity: 0.3;
-//   }
-// }
+  &.masked {
+    opacity: 0.3;
+  }
+}
 
 // .hideable {
 //   transition: 0.2s;

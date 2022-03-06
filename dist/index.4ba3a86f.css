@@ -450,6 +450,9 @@ body {
     font-size: 1em;
   }
 }
+body.overflow--hidden {
+  overflow: hidden;
+}
 body.modal--open {
   overflow: hidden;
 }
@@ -1006,6 +1009,7 @@ select:-webkit-autofill:focus {
 .welcome-text--content {
   display: flex;
   align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   flex-flow: column;
   color: #fff;
@@ -1026,6 +1030,17 @@ select:-webkit-autofill:focus {
   .welcome-text--logo {
     flex: 1;
   }
+}
+.text-action {
+  align-self: flex-end;
+  color: #fff;
+  padding: 1rem;
+  z-index: 6;
+  background: transparent;
+  cursor: pointer;
+}
+.text-action.masked {
+  opacity: 0.3;
 }
 .work {
   background-color: #000;
@@ -1204,14 +1219,19 @@ select:-webkit-autofill:focus {
   align-items: center;
   flex: 1;
   min-height: 100vh;
-  background-image: url("crater-center.dd7d6b75.jpg");
   background-repeat: no-repeat;
-  background-size: 280%;
-  background-position: center;
+}
+@media (max-width: 992px) {
+  .about .section-main {
+    background-image: url("crater-center-500.6eed63e3.jpg");
+    background-position-x: center;
+  }
 }
 @media (min-width: 992px) {
   .about .section-main {
+    background-image: url("crater-center-2000.94ef42e0.jpg");
     background-size: cover;
+    background-position: center;
   }
 }
 .about .section-main:before {
@@ -1233,6 +1253,15 @@ select:-webkit-autofill:focus {
   position: absolute;
   background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 20%);
   z-index: 2;
+}
+.about .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #001e4a;
+  opacity: 0.3;
 }
 .about .target {
   width: 200px;

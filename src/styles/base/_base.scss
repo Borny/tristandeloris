@@ -41,6 +41,10 @@ body {
     font-size: 1em;
   }
 
+  &.overflow--hidden {
+    overflow: hidden;
+  }
+
   &.modal--open {
     overflow: hidden;
   }

@@ -24,13 +24,17 @@
     align-items: center;
     flex: 1;
     min-height: 100vh;
-    background-image: url('../img/pics/compressed/crater-center.jpg');
     background-repeat: no-repeat;
-    background-size: 280%;
-    background-position: center;
+    // background-size: 280%;
 
+    @media (max-width: $screen-md) {
+      background-image: url('../img/pics/compressed/crater-center-500.jpg');
+      background-position-x: center;
+    }
     @media (min-width: $screen-md) {
+      background-image: url('../img/pics/compressed/crater-center-2000.jpg');
       background-size: cover;
+      background-position: center;
     }
 
     &:before {
@@ -54,6 +58,16 @@
       background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 20%);
       z-index: 2;
     }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #001e4a;
+    opacity: 0.3;
   }
 
   .target {

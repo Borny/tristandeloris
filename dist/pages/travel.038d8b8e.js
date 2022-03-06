@@ -471,6 +471,7 @@ parcelHelpers.export(exports, "Header", ()=>Header
 );
 class Header {
     constructor(){
+        this.body = document.getElementById('body');
         this.header = document.getElementById('header');
         this.headerTitleBtn = document.getElementById('header-title');
         this.headerTitleArrow = document.getElementsByClassName('header__title__arrow')[0];
@@ -510,6 +511,7 @@ class Header {
         this.headerTitleBackdrop.classList.toggle('active');
     }
     toggleNav() {
+        this.body.classList.toggle('overflow--hidden');
         this.navBtn.classList.toggle('open');
         this.navList.classList.toggle('active');
         this.headerNavBackdrop.classList.contains('active') ? this.headerNavBackdrop.classList.remove('active') : this.headerNavBackdrop.classList.add('active');
