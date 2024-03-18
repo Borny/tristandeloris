@@ -1,6 +1,6 @@
 {
   "name": "Tristan Deloris",
-  "short_name": "T Deloris",
+  "short_name": "Tristan Deloris short name",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -10,8 +10,7 @@
   "description": "Tristan Deloris Professional App",
   "dir": "ltr",
   "lang": "en-US",
-  "icons": [
-    {
+  "icons": [{
       "src": "./img/icons/icon/android-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
